@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+
+<head>
+  <meta charset="UTF-8" />
+  <base href="/cv/">
+  <title>Juan Uys &mdash; coder creative</title>
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="page">
+    <ui-view></ui-view>
+  </div>
+
+  <!-- ========= -->
+  <!-- TEMPLATES -->
+  <!-- ========= -->
+
+  <script type="text/ng-template" id="home.html">
+
+    <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
+    <h1 class="name">{{$ctrl.portfolio.contact.name}}</h1>
+    <h4 class="role">{{$ctrl.portfolio.contact.role}}</h4>
+
+    <p>{{$ctrl.portfolio.personal.statement}}</p>
+
+    <div class="personal">
+      <h3>
+      <i style="background-image: url('{{$ctrl.images.icons.avatar}}');"></i>
+      Personal Info</h3>
+
+      <strong>Address</strong>
+      <p>{{$ctrl.portfolio.contact.address}}</p>
+
+      <strong>Phone</strong>
+      <p>{{$ctrl.portfolio.contact.phone}}</p>
+
+      <strong>Email</strong>
+      <p>{{$ctrl.portfolio.contact.email}}</p>
+
+      <strong>Github</strong>
+      <p><a href="{{$ctrl.portfolio.contact.web.github}}">{{$ctrl.portfolio.contact.web.github}}</a></p>
+
+      <strong>Portfolio</strong>
+      <p><a href="{{$ctrl.portfolio.contact.web.portfolio}}">{{$ctrl.portfolio.contact.web.portfolio}}</a></p>
+
+    </div>
+
+    <div class="skills">
+        <h3>
+            <i style="background-image: url('{{$ctrl.images.icons.skills}}');"></i>
+            Skills</h3>
+      <p ng-repeat="skill in $ctrl.portfolio.personal.skills">{{skill}}</p>
+    </div>
+
+    <div class="experience">
+        <h3>
+            <i style="background-image: url('{{$ctrl.images.icons.experience}}');"></i>
+            Experience</h3>
+
+            <span><em>({{ $ctrl.portfolio.roles.length - $ctrl.showExperience}} roles elided)</em></span>
+
+      <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.showExperience">
+        <strong>{{role.type}} {{role.title}} @ <em>{{role.company}}</em></strong>
+        <span>{{role.start}}<ng-show="!!role.end"> - {{role.end}}</ng-show><ng-show ng-show="!role.end"> now</ng-show></span>
+
+        <ul>
+          <li ng-repeat="duty in role.duties">{{duty}}</li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <div class="experience">
+        <h3>
+            <i style="background-image: url('{{$ctrl.images.icons.education}}');"></i>
+            Education and certifications</h3>
+
+            <span><em>({{ $ctrl.portfolio.education.length - $ctrl.showEducation}} items elided)</em></span>
+
+      <div ng-repeat="it in $ctrl.portfolio.education | limitTo: $ctrl.showEducation">
+        <span><strong>{{it.course}}</strong></span>
+        <span><em>{{it.institution}} ({{it.year}})</em></span>
+
+      </div>
+    </div>
+
+    <div class="experience">
+        <h3>
+            <i style="background-image: url('{{$ctrl.images.icons.interests}}');"></i>
+            Interests</h3>
+      <ul>
+      <li ng-repeat="it in $ctrl.portfolio.personal.interests">{{it}}</li>
+      </ul>
+
+      </div>
+
+      <hr>
+    </div>
+
+  </script>
+
+  <script type="text/ng-template" id="404.html">
+    
+    <p class="intro">Seek, and you shan't find.</p>
+
+    <async-img
+      class="headerimage intro"
+      src="{{$ctrl.images.$404}}"></async-img>
+
+  </script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/portfolio/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521406324"></head> <body> <ui-view></ui-view>    <script type="text/ng-template" id="home.html">
+
+    <async-img
+      class="headerimage intro"
+      src="{{$ctrl.images.header}}"
+      on-load="$ctrl.onAsyncImgLoad()"
+      on-enter="$ctrl.onAsyncImgEnter()"></async-img>
+      
+    <slogan finished="$ctrl.doneFn()"></slogan>
+
+    <div class="tags" ng-if="sloganIsDone">
+      <span class="tag" ng-class="{'currenttag': tag == $ctrl.tag }" ng-repeat="tag in $ctrl.tags">
+          <a href="" ng-click="$ctrl.tag = tag">{{tag}}</a>
+        </span>
+    </div>
+
+    <div class="cards" ng-if="sloganIsDone">
+      <card
+        class="intro"
+        it="card"
+        ng-repeat="card in $ctrl.cards | filter:($ctrl.tag != 'all' || undefined) && { tag: $ctrl.tag } track by $index"></card>
+    </div>
+
+  </script> <script type="text/ng-template" id="slogan.html">
+    <div id="slogan" class="headertext intro">
+      <div ng-if="!$ctrl.seen">
+        <span typewriter blink-cursor="false" type-delay="150" text="$ctrl.words2" initial-delay="{{$ctrl.wait}}s" callback-fn="$ctrl.allDone()"></span>
+        <span>U</span><span id="u">nleash </span><span>Y</span><span id="y">our </span><span>S</span><span id="s" typewriter blink-cursor="false" type-delay="50" text="$ctrl.words" initial-delay="1.5s" callback-fn="doneFn()"></span>
+      </div>
+      <div ng-if="$ctrl.seen" ng-class="{'intro': $ctrl.seen}">
+        Hi, I'm Juan UYS
+      </div>
+      <p ng-if="$ctrl.doneTyping" ng-class="{'intro': $ctrl.doneTyping}">
+        I'm a creative developer from London with {{ $ctrl.startDate | amDifference : null : 'years' | abs}}
+        years experience building things.
+      </p>
+    </div>
+  </script> <script type="text/ng-template" id="card.html">
+    <a class="cardlink" ng-href="{{card.link}}">
+      <div class="card">
+        
+        <h1>{{card.name}}</h1>
+
+        <em>{{card.tag}}</em>
+
+        <p>
+          {{card.description}}
+        </p>
+
+        <img ng-if="card.img" src="{{card.img}}"></img>
+        
+
+      </div>
+    </a>
+  </script> <script type="text/ng-template" id="404.html">
+    
+    <p class="intro">Oh, poopy.</p>
+
+    <async-img
+      class="headerimage intro"
+      src="{{$ctrl.images.$404}}"></async-img>
+
+  </script> <script src="uysio.js?1521406324"></script> </body> </html> 

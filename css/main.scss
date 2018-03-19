@@ -1,0 +1,114 @@
+$textcolour: #444;
+//$brand: #0076c9;
+$brand: #75aafd;
+//$accent: #C97700;
+$accent: #f4b268;
+$bg: white;
+$bgd: darken($bg, 4%);
+$bgdd: darken($bg, 8%);
+$phi: 1.61803398875;
+$border: 3px solid $brand;
+$card: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+$size: 12pt;
+
+// import before others
+@import 'prefixer';
+
+@import 'header';
+@import 'brand';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $textcolour;
+    background-color: $bgd;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-weight: normal;
+    font-size: $size;
+    margin: 30px;
+}
+
+@page {
+    // size: 7in 9.25in;
+    // margin: 27mm 16mm 27mm 16mm;
+
+    size: A4 portrait;
+    margin: 2cm;
+}
+
+.page {
+    background-color: white;
+    /* Reflect the paper width in the screen rendering (must match size from @page rule) */
+    width: 21cm;
+    box-shadow: $card;
+    outline: 0;
+}
+
+/* Defines a class for manual page breaks via inserted .page-break element */
+div.page-break {
+	page-break-after: always;
+}
+/* For top-level headings only */
+h1 {
+	/* Force page breaks after */
+	page-break-before: always;
+}
+/* For all headings */
+h1, h2, h3, h4, h5, h6 {
+	/* Avoid page breaks immediately */
+	page-break-after: avoid;
+}
+/* For all paragraph tags */
+p {
+	/* Reset the margin so that the text starts and ends at the expected marks */
+	margin: 0;
+}
+/* For adjacent paragraph tags */
+p + p {
+	/* Restore the spacing between the paragraphs */
+	margin-top: 0.5cm;
+}
+/* For links in the document */
+a {
+	/* Prevent colorization or decoration */
+	text-decoration: none;
+	color: $textcolour;
+}
+/* For tables in the document */
+table {
+	/* Avoid page breaks inside */
+	page-break-inside: avoid;
+}
+
+
+/* When the document is actually printed */
+@media print {
+	html, body {
+		/* Reset the document's background color */
+		background-color: #fff;
+	}
+	.page {
+		/* Reset all page styles that have been for better screen appearance only */
+		/* Break cascading by using the !important rule */
+		/* These resets are absolute must-haves for the print styles and the specificity may be higher elsewhere */
+		width: initial !important;
+		min-height: initial !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		border: initial !important;
+		border-radius: initial !important;
+		background: initial !important;
+		box-shadow: initial !important;
+
+		/* Force page breaks after each .page element of the document */
+		page-break-after: always;
+	}
+}

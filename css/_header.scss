@@ -1,0 +1,15 @@
+$spacing: 80px;
+
+img.profile {
+    width: $spacing;
+    box-shadow: $card;
+    border-radius: 50%;
+    float: left;
+    margin: $spacing / 3;
+}
+h1.name {
+    padding-top: $spacing / 3;
+}
+h4.role {
+    font-style: italic;
+}

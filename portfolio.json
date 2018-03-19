@@ -1,0 +1,418 @@
+{
+    "contact": {
+        "name": "Juan M Uys",
+        "role": "coder creative",
+        "phone": "07702783956",
+        "email": "juan+cv@uys.io",
+        "address": "London N21, United Kingdom",
+        "web": {
+            "github": "https://github.com/opyate",
+            "portfolio": "https://uys.io/portfolio/"
+        }
+    },
+    "personal": {
+        "statement": "I’m a full-stack web developer from London with over 15 years experience in industries ranging from government, e-commerce, and banking. I’m a pragmatist, automate once I need to do something the second time around, and enjoy the odd hackathon to flex my MVP muscle.",
+        "interests": [
+            "hackathon junkie",
+            "makes little games in spare time",
+            "plays guitar and online chess"
+        ],
+        "skills": [
+            "Team leadership",
+            "Pragmatism",
+            "Essentialism",
+            "Automation",
+            "Architecture"
+        ]
+    },
+    "education": [
+        {
+            "institution": "Coursera",
+            "course": "deeplearning.ai",
+            "level": "specialisation",
+            "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/WUMC3L2MXQ7F",
+            "year": 2018
+        },
+        {
+            "institution": "Georgia Institute of Technology",
+            "course": "Computational Investing",
+            "level": "certificate",
+            "url": "https://www.coursera.org/account/accomplishments/records/3QXU2KYMLG",
+            "year": 2013
+        },
+        {
+            "institution": "Coursera",
+            "course": "Data Analysis",
+            "year": 2013
+        },
+        {
+            "institution": "Coursera",
+            "course": "Web Intelligence and Big Data",
+            "year": 2013
+        },
+        {
+            "institution": "Coursera",
+            "course": "Functional Programming Principles in Scala",
+            "year": 2012
+        },
+        {
+            "institution": "Udacity",
+            "course": "Introduction to Artificial Intelligence",
+            "year": 2011
+        },
+        {
+            "institution": "Sun Microsystems",
+            "course": "Sun Certified Java Programmer",
+            "level": "certificate",
+            "year": 2007
+        },
+        {
+            "institution": "International School for Scientific Computing",
+            "course": "Artificial Intelligence & Neural Networks",
+            "level": "diploma",
+            "year": 2001
+        },
+        {
+            "institution": "Torque IT",
+            "course": "A+",
+            "level": "certificate",
+            "year": 1999
+        },
+        {
+            "institution": "NAUI",
+            "course": "Scuba diver",
+            "level": "advanced",
+            "year": 1995
+        }
+    ],
+    "roles": [
+        {
+            "title": "consultant",
+            "company": "barclaycard",
+            "url": "https://www.barclaycard.co.uk/",
+            "type": "contract",
+            "duties": [
+                "Delivering Pay By Bank app",
+                "Maintaining a custom in-house test suite called Regressioniser",
+                "Integrating components securily with end-to-end encryption",
+                "Javascript for Pay By Bank App merchant frontend integration"
+            ],
+            "start": "2018-01",
+            "end": "2018-03",
+            "tech": [
+                "java", "soap", "xml", "apache cxf", "jboss", "jenkins", "svn"
+            ],
+            "current": true
+        },
+        {
+            "title": "consultant",
+            "company": "Telefónica",
+            "url": "https://www.telefonica.com/en/",
+            "type": "contract",
+            "duties": [
+                "Delivering features on O2 Priority content management project",
+                "Ensuring uptime and resilience against the 'Wednesday noon free coffee' attack",
+                "Working with Telefónica staff to align our architecture with their roadmap",
+                "Responsible for CMS roles, thus effecting vendor access",
+                "Built audit logging via custom annotations",
+                "Automated dev start-up workflow to ease working with ~20 services and apps",
+                "Contributed to back-end and front-end tests alike",
+                "Contributed changes to front-end React applications"
+            ],
+            "start": "2017-09",
+            "end": "2017-12",
+            "tech": [
+                "java", "dropwizard", "mongodb", "react", "javascript", "html", "css", "jenkins", "git"
+            ],
+            "current": false
+        },
+        {
+            "title": "consultant",
+            "company": "Tesco",
+            "url": "https://www.tesco.com/",
+            "type": "contract",
+            "duties": [
+                "Part of team at Tesco to build the new price service using Vert.X and RxJava technology",
+                "Responsible for proxying service with Apigee / Google Edge",
+                "Responsible for building MQTT-based infrastructure proof-of-concept using Mosquitto",
+                "Rotated into team that is responsible for ensuring CouchDB uptime, replication, and backups",
+                "Rotated into team which automated developer workflows, identity management, and remote working security",
+                "Responsible for S3-backed long term storage as required by data retention policy"
+            ],
+            "start": "2017-02",
+            "end": "2017-08",
+            "tech": [
+                "apigee", "mqtt", "mosquitto", "aws", "groovy", "java", "rxjava", "couchdb",
+                "vert.x", "kafka", "splunk", "appdynamics", "runscope", "jenkins", "cloudformation", "git"
+            ],
+            "current": false
+        },
+        {
+            "title": "consultant",
+            "company": "CAPCO",
+            "url": "http://capco.com/",
+            "type": "contract",
+            "duties": [
+                "Part of team at CAPCO to build an information platform on the MEAN stack for global retail banks",
+                "Data visualisation platform built using D3.js",
+                "Turning Microsoft Project data into actionable information to assist with financial regulatory changes",
+                "Responsible for building the directed-acyclic graph approach of internally representing project trees"
+            ],
+            "start": "2016-05",
+            "end": "2017-02",
+            "tech": [
+                "d3.js", "javascript", "html", "css", "typescript", "angularjs", "angular2", "mongodb", "express",
+                "circleci", "docker", "aws", "git"
+            ],
+            "current": false
+        },
+        {
+            "title": "consultant",
+            "company": "Condé Nast Commerce",
+            "url": "https://www.condenast.co.uk/",
+            "type": "contract",
+            "duties": [
+                "Team lead for Platform Team of six",
+                "Defining and helping team define OKRs",
+                "Reporting to CTO",
+                "Responsible for code-that-writes-code approach to building out our API proxy based on HapiJS",
+                "Worked closely with ops to do initial work on scaling out with Kubernetes",
+                "Responsible for adopting out-sourced Magento plugin and continuing maintenance in-house",
+                "Facilitating integrations with SAP Hybris, Mirakl, Vertex, and other e-commerce SaaS",
+                "Introducing team to Mashape's Kong to replace our custom proxy",
+                "Contributed 'correlation ID' plugin to Kong",
+                "Responsible for interviewing",
+                "Devised a remote interviewing and pair programming system",
+                "Instilled a respect for good metrics in the team",
+                "Responsible for API developer portal, built with React"
+            ],
+            "start": "2015-07",
+            "end": "2016-03",
+            "tech": [
+                "clojure", "clojurescript", "ruby", "php", "kubernetes", "docker", "aws",
+                "magento", "hybris", "mirakl", "hapijs", "swagger", "react", "javascript", "html", "css",
+                "kong", "lua", "git"
+            ],
+            "current": false
+        },
+        {
+            "title": "consultant",
+            "company": "GDS",
+            "url": "https://gds.blog.gov.uk/",
+            "type": "contract",
+            "duties": [
+                "Consulting with various teams at GDS transforming government services as part of greater transformation",
+                "Prototyping new casework system, and blockchain-based system-of-record as part of Land Registry beta",
+                "Maintained a Home Office policy management system",
+                "Fostering code re-use across ministries, agencies, and departments as part of a greater open source initiative in government",
+                "Lead developer on the Cross Government Services alpha AKA 'Facebook for Civil Servants'",
+                "Developing a near infinite number of prototypes following the Downey show-dont-tell approach"
+            ],
+            "start": "2014-03",
+            "end": "2015-06",
+            "tech": [
+                "python", "docker", "scala", "express", "aws", "heroku", "postgresql", "git", "flask"
+            ],
+            "current": false
+        },
+        {
+            "title": "founder",
+            "company": "pdfcrunch",
+            "url": "https://pdfcrun.ch/",
+            "type": "startup",
+            "duties": [
+                "Development of all services",
+                "Deep learning approach for V2 of the core algorithm",
+                "Beta tester liaison",
+                "Growth and customer acquisition"
+            ],
+            "start": "2013-11",
+            "tech": [
+                "python", "keras", "javascript", "html", "css", "angularjs", "postgresql", "flask", "git"
+            ],
+            "current": true
+        },
+        {
+            "title": "developer",
+            "company": "Credit Monster",
+            "url": "https://creditmonster.com/",
+            "type": "freelance",
+            "duties": [
+                "Part of distributed remote team at Credit Monster (part of New Concepts Development) to help launch a identity theft protection system.",
+                "PDF parsing components, especially to retrieve historical finance tabular data",
+                "Supporting services for credit scoring and lead generation",
+                "Helping them reach the number 4 spot for credit rating services in the USA",
+                "Fully remote, with co-developers in Belgium, US East Coast and California"
+            ],
+            "start": "2013-08",
+            "end": "2014-03",
+            "tech": [
+                "scala", "angularjs", "aws", "git"
+            ],
+            "current": false
+        },
+        {
+            "title": "developer",
+            "company": "Qudini",
+            "url": "https://www.qudini.com/",
+            "type": "freelance",
+            "duties": [
+                "Optimisation of the core web app",
+                "Automate deployment using configuration management"
+            ],
+            "start": "2013-08",
+            "end": "2014-03",
+            "tech": [
+                "java", "playframework", "mysql", "aws", "ansible", "git"
+            ],
+            "current": false
+        },
+        {
+            "title": "developer",
+            "company": "Dohub",
+            "type": "freelance",
+            "duties": [
+                "API on task management, team management, etc",
+                "Delivered single page app to interface with API",
+                "Task marketplace modelled on an order book"
+            ],
+            "start": "2013-08",
+            "end": "2014-03",
+            "tech": [
+                "scala", "akka", "angularjs", "javascript", "html", "css", "postgresql", "aws", "git"
+            ],
+            "current": false
+        },
+        {
+            "title": "cofounder",
+            "company": "pollarize",
+            "url": "https://uys.io/portfolio/",
+            "type": "startup",
+            "duties": [
+                "Quote CTO unquote",
+                "All things technical",
+                "Liaising with outside contractors for the iPhone app",
+                "Architecting all components, and integrating with various SaaS",
+                "Tech blog"
+            ],
+            "start": "2012-03",
+            "end": "2013-03",
+            "tech": [
+                "scala", "playframework2", "heroku", "aws", "postgresql", "blitline", "twilio", "pubnub", "urban airship", "mailgun", "git"
+            ],
+            "current": false
+        },
+        {
+            "title": "developer",
+            "company": "Net-A-Porter Group",
+            "type": "permanent",
+            "duties": [
+                "Helped grow Java team from 2 to 50+",
+                "Migrated the website from Struts to Spring",
+                "Solely implemented the PCI-compliant payment system and credit card database with end-to-end encryption",
+                "Liaising with the outsourced pentesting team to ensure the payment system is hardened",
+                "Introduced Scala to the company in 2009",
+                "Hackday champion 2011, showcasing a mobile app for the budding fashion scout",
+                "Implemented a CMS and workflow system with the team",
+                "Solely implemented the translation service integrating with 3rd party translators and CMS system",
+                "Implemented search and sitemap automation",
+                "Built automation glue for our CI/CD system"
+            ],
+            "start": "2007-01",
+            "end": "2013-08",
+            "tech": [
+                "java", "scala", "lift", "soap", "xml", "alfresco", "activiti", "spring batch", "apache nutch", "lucene", "solr", "elasticsearch", "jenkins", "svn", "git"
+            ],
+            "current": false
+        },
+        {
+            "title": "developer",
+            "company": "Beat That Quote",
+            "url": "https://beatthatquote.com",
+            "type": "permanent",
+            "duties": [
+                "Implemented initial systems as fifth employee and second developer",
+                "Implemented direct-2-broker system rapidly using an early version of Ruby On Rails"
+            ],
+            "start": "2005-12",
+            "end": "2006-07",
+            "tech": [
+                "java", "ruby", "rails", "javascript", "html", "css", "ajax", "cvs"
+            ],
+            "current": false
+        },
+        {
+            "title": "developer",
+            "company": "sefl-employed",
+            "url": "https://opyate.com",
+            "type": "freelance",
+            "duties": [
+                "Furniture and interior design website for Bravacasa",
+                "IT services for TAIB private bank"
+            ],
+            "start": "2005-10",
+            "end": "2005-12",
+            "tech": [
+                "php", "javascript", "html", "css", "mysql", "perl", "cvs"
+            ],
+            "current": false
+        },
+        {
+            "title": "support engineer",
+            "company": "ManBytesDog",
+            "type": "permanent",
+            "duties": [
+                "First line support for all VITAL customers",
+                "Co-development of UCEA's new website",
+                "Search engine and indexing system for UCEA's database"
+            ],
+            "start": "2004-05",
+            "end": "2005-11",
+            "tech": [
+                "c#", "sql server", "visual source safe", "javascript", "html", "css"
+            ],
+            "current": false
+        },
+        {
+            "title": "web developer",
+            "company": "Business Edge Systems",
+            "url": "http://www.businessedge.co.za",
+            "type": "permanent",
+            "duties": [
+                "Maintenance of a private bank single sign-on site",
+                "Development of Views and Controllers for web-based financial software",
+                "Migration of development processes and sources for a lease management firm"
+            ],
+            "start": "2003-10",
+            "end": "2004-03",
+            "tech": [
+                "java", "coldfusion", "sql server", "dreamweaver", "visual source safe", "uml", "soap", "c#", "rational clearcase", "websphere", "tomcat", "jetty"
+            ],
+            "current": false
+        },
+        {
+            "title": "web developer",
+            "company": "iGate Technologies",
+            "url": "https://web.archive.org/web/20020601093420/http://www.icatcher.co.za:80/",
+            "type": "permanent",
+            "duties": [
+                "Sole developer and webmaster on many projects",
+                "Prototypes and demos using WAP and DHTML technology",
+                "Implemented a back office system for ad-management server, the first with hourly stats",
+                "Implemented a reporting engine for the ad server",
+                "Ad creation using cutting edge DHTML and Flash, for e.g. Red Bull",
+                "iCatcher network integration with DoubleClick and CheckM8, taking our clients to a whole new level",
+                "Administration of all servers",
+                "Development of Newsletter engine, with metrics"
+            ],
+            "start": "2002-05",
+            "end": "2003-09",
+            "tech": [
+                "java", "postgresql", "javascript", "html", "css", "tomcat", "apache", "netbeans", "xslt", "flash", "vbscript", "macromedia", "photoshop", "wap", "j2me", "webmin", "perl", "sendmail"
+            ],
+            "current": false
+        }
+    ]
+    
+
+}

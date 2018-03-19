@@ -1,0 +1,41 @@
+.page p {
+    margin-left: $spacing;
+}
+
+h3 {
+    margin-left: $spacing;
+}
+h3 i {
+    padding-left: 30px;
+    background-repeat: no-repeat;
+}
+.page span {
+    margin-left: $spacing;
+}
+
+.page strong {
+    padding-top: $spacing/7;
+    margin-left: $spacing;
+    display: block;
+}
+
+div.personal {
+    float: left;
+    margin-right: 150px;
+}
+.page i {
+    padding-bottom: 10px;
+}
+
+.experience {
+    padding-top: $spacing/7;
+    clear: both;
+}
+
+.role strong {
+    border-top: 1px solid $bgd;
+}
+
+.page ul {
+    margin-left: $spacing;
+}
