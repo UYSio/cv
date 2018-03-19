@@ -1,0 +1,33 @@
+@media print {
+	html, body {
+		/* Reset the document's background color */
+		background-color: #fff;
+	}
+	.page {
+		/* Reset all page styles that have been for better screen appearance only */
+		/* Break cascading by using the !important rule */
+		/* These resets are absolute must-haves for the print styles and the specificity may be higher elsewhere */
+		width: initial !important;
+		min-height: initial !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		border: initial !important;
+		border-radius: initial !important;
+		background: initial !important;
+		box-shadow: initial !important;
+
+		/* Force page breaks after each .page element of the document */
+		page-break-after: always;
+	}
+	.section {
+		// padding-top: $spacing / 3;
+		// padding-bottom: $spacing / 3;
+		// padding-left: $spacing;
+		// padding-right: $spacing;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	i.icon {
+		display: none;
+	}
+}

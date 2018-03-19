@@ -1,0 +1,13 @@
+i.icon {
+    background-color: lighten($accent, 20%);
+    box-shadow: $card;
+    border-radius: 50%; 
+    
+    margin-left: 5px;
+    margin-right: 15px;
+    padding: 15px 24px 15px 24px;
+    // margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // margin: 7px;
+}

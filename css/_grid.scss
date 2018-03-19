@@ -1,0 +1,34 @@
+.personal_and_skills {
+    display: grid;
+    grid-template: "personal skills"
+}
+
+.personal {
+    grid-area: personal;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.education_and_interests {
+    display: grid;
+    grid-template: "education interests"
+}
+
+.education {
+    grid-area: education;
+}
+
+.interests {
+    grid-area: interests;
+}
+
+@media (max-width: 800px) {
+    .personal_and_skills {
+        grid-template: "personal" "skills"
+    }
+    .education_and_interests {
+        grid-template: "education" "interests"
+    }
+}

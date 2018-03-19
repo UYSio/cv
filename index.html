@@ -21,84 +21,107 @@
 
   <script type="text/ng-template" id="home.html">
 
-    <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
-    <h1 class="name">{{$ctrl.portfolio.contact.name}}</h1>
-    <h4 class="role">{{$ctrl.portfolio.contact.role}}</h4>
+    <div class="header section">
+      <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
+      <h1 class="name">{{$ctrl.portfolio.contact.name}}</h1>
+      <h4 class="role">{{$ctrl.portfolio.contact.role}}</h4>
 
-    <p>{{$ctrl.portfolio.personal.statement}}</p>
+      <p>{{$ctrl.portfolio.personal.statement}}</p>
+    </div>
 
-    <div class="personal">
+    <div class="personal_and_skills section">
+      <div class="personal">
+        <h3>
+          <i class="icon" style="background-image: url('{{$ctrl.images.icons.avatar}}');"></i>
+          Personal Info
+        </h3>
+
+        <dl>
+          <dt>Address</dt>
+          <dd>{{$ctrl.portfolio.contact.address}}</dd>
+
+          <dt>Phone</dt>
+          <dd>{{$ctrl.portfolio.contact.phone}}</dd>
+
+          <dt>Email</dt>
+          <dd>{{$ctrl.portfolio.contact.email}}</dd>
+        
+          <dt>Github</dt>
+          <dd><a href="{{$ctrl.portfolio.contact.web.github}}">{{$ctrl.portfolio.contact.web.github}}</a></dd>
+        
+          <dt>Portfolio</dt>
+          <dd><a href="{{$ctrl.portfolio.contact.web.portfolio}}">{{$ctrl.portfolio.contact.web.portfolio}}</a></dd>
+        </dl>
+        
+      </div>
+
+      <div class="skills">
+        <h3>
+          <i class="icon" style="background-image: url('{{$ctrl.images.icons.skills}}');"></i>
+          Skills
+        </h3>
+        <ul>
+          <li ng-repeat="skill in $ctrl.portfolio.personal.skills">{{skill}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience section">
       <h3>
-      <i style="background-image: url('{{$ctrl.images.icons.avatar}}');"></i>
-      Personal Info</h3>
+        <i class="icon" style="background-image: url('{{$ctrl.images.icons.experience}}');"></i>
+        Experience
+      </h3>
 
-      <strong>Address</strong>
-      <p>{{$ctrl.portfolio.contact.address}}</p>
-
-      <strong>Phone</strong>
-      <p>{{$ctrl.portfolio.contact.phone}}</p>
-
-      <strong>Email</strong>
-      <p>{{$ctrl.portfolio.contact.email}}</p>
-
-      <strong>Github</strong>
-      <p><a href="{{$ctrl.portfolio.contact.web.github}}">{{$ctrl.portfolio.contact.web.github}}</a></p>
-
-      <strong>Portfolio</strong>
-      <p><a href="{{$ctrl.portfolio.contact.web.portfolio}}">{{$ctrl.portfolio.contact.web.portfolio}}</a></p>
-
-    </div>
-
-    <div class="skills">
-        <h3>
-            <i style="background-image: url('{{$ctrl.images.icons.skills}}');"></i>
-            Skills</h3>
-      <p ng-repeat="skill in $ctrl.portfolio.personal.skills">{{skill}}</p>
-    </div>
-
-    <div class="experience">
-        <h3>
-            <i style="background-image: url('{{$ctrl.images.icons.experience}}');"></i>
-            Experience</h3>
-
-            <span><em>({{ $ctrl.portfolio.roles.length - $ctrl.showExperience}} roles elided)</em></span>
+      <span><em>({{ $ctrl.portfolio.roles.length - $ctrl.showExperience}} roles elided)</em></span>
 
       <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.showExperience">
-        <strong>{{role.type}} {{role.title}} @ <em>{{role.company}}</em></strong>
-        <span>{{role.start}}<ng-show="!!role.end"> - {{role.end}}</ng-show><ng-show ng-show="!role.end"> now</ng-show></span>
+        <!-- <strong>{{role.type}} {{role.title}} at <em>{{role.company}}</em></strong> -->
+        <h4>
+          {{role.type}} {{role.title}}
+          <small>
+          at
+          </small>
+          {{role.company}}
+
+          <small>
+          ({{role.start}}<ng-show="!!role.end"> - {{role.end}}</ng-show><ng-show ng-show="!role.end"> now</ng-show>)
+          </small>
+        </h4>
+
+        
 
         <ul>
           <li ng-repeat="duty in role.duties">{{duty}}</li>
         </ul>
-        
       </div>
     </div>
 
-    <div class="experience">
+    <div class="education_and_interests section">
+      <div class="education">
         <h3>
-            <i style="background-image: url('{{$ctrl.images.icons.education}}');"></i>
-            Education and certifications</h3>
+          <i class="icon" style="background-image: url('{{$ctrl.images.icons.education}}');"></i>
+          Education
+        </h3>
 
-            <span><em>({{ $ctrl.portfolio.education.length - $ctrl.showEducation}} items elided)</em></span>
+        <span><em>({{ $ctrl.portfolio.education.length - $ctrl.showEducation}} items elided)</em></span>
 
-      <div ng-repeat="it in $ctrl.portfolio.education | limitTo: $ctrl.showEducation">
-        <span><strong>{{it.course}}</strong></span>
-        <span><em>{{it.institution}} ({{it.year}})</em></span>
+        <dl>
+          <dt ng-repeat-start="it in $ctrl.portfolio.education | limitTo: $ctrl.showEducation">{{it.institution}} ({{it.year}})</dt>
+          <dd ng-repeat-end>{{it.course}}</dd>
+        </dl>
+      </div>
 
+      <div class="interests">
+        <h3>
+          <i class="icon" style="background-image: url('{{$ctrl.images.icons.interests}}');"></i>
+          Interests
+        </h3>
+        <ul>
+          <li ng-repeat="it in $ctrl.portfolio.personal.interests">{{it}}</li>
+        </ul>
       </div>
     </div>
 
-    <div class="experience">
-        <h3>
-            <i style="background-image: url('{{$ctrl.images.icons.interests}}');"></i>
-            Interests</h3>
-      <ul>
-      <li ng-repeat="it in $ctrl.portfolio.personal.interests">{{it}}</li>
-      </ul>
-
-      </div>
-
-      <hr>
     </div>
 
   </script>

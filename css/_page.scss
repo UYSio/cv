@@ -1,0 +1,58 @@
+@page {
+    // size: 7in 9.25in;
+    // margin: 27mm 16mm 27mm 16mm;
+
+    size: A4 portrait;
+    margin: 2cm;
+}
+
+.page {
+    background-color: white;
+    /* Reflect the paper width in the screen rendering (must match size from @page rule) */
+    width: 21cm;
+    box-shadow: $card;
+    outline: 0;
+}
+
+@media (max-width: 800px) {
+    .page {
+        width: 100%;
+    }
+}
+
+/* Defines a class for manual page breaks via inserted .page-break element */
+div.page-break {
+	page-break-after: always;
+}
+/* For top-level headings only */
+h1:not(1) {
+	/* Force page breaks after */
+	page-break-before: always;
+}
+
+/* For all headings */
+h1, h2, h3, h4, h5, h6 {
+	/* Avoid page breaks immediately */
+	page-break-after: avoid;
+}
+/* For all paragraph tags */
+p {
+	/* Reset the margin so that the text starts and ends at the expected marks */
+	margin: 0;
+}
+/* For adjacent paragraph tags */
+p + p {
+	/* Restore the spacing between the paragraphs */
+	margin-top: 0.5cm;
+}
+/* For links in the document */
+a {
+	/* Prevent colorization or decoration */
+	text-decoration: none;
+	color: $textcolour;
+}
+/* For tables in the document */
+table {
+	/* Avoid page breaks inside */
+	page-break-inside: avoid;
+}
