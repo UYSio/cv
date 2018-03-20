@@ -9,8 +9,8 @@
     ctrl.showExperience = 5;
     ctrl.showEducation = 5;
 
-    ctrl.showNSkillsInit = 7;
-    ctrl.showNSkills = 7;
+    ctrl.showNSkillsInit = 10;
+    ctrl.showNSkills = 10;
 
     ctrl.showMore = function() {
       ctrl.showNSkills += ctrl.showNSkillsInit;

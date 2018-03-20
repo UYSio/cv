@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/cv/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521546008"></head> <body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
+<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/cv/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521559647"></head> <body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
 
     <div class="header section">
       <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
@@ -6,6 +6,15 @@
       <h4 class="role">{{$ctrl.portfolio.contact.role}}</h4>
 
       <p>{{$ctrl.portfolio.personal.statement}}</p>
+    </div>
+
+    <div class="section">
+      <h3>
+        <i class="icon" style="background-image: url('{{$ctrl.images.icons.software}}');"></i>
+        Toolkit (top {{$ctrl.showNSkills}})
+      </h3>
+      <viz show="$ctrl.showNSkills"></viz>
+      <a href="" ng-click="$ctrl.showMore()">Show {{$ctrl.showNSkillsInit}} more...</a>
     </div>
 
     <div class="personal_and_skills section">
@@ -110,4 +119,5 @@
       class="headerimage intro"
       src="{{$ctrl.images.$404}}"></async-img>
 
-  </script> <script src="uysio.js?1521546008"></script> </body> </html> 
+  </script> <script type="text/ng-template" id="viz.html">
+  </script> <script src="uysio.js?1521559647"></script> </body> </html> 
