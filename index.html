@@ -75,7 +75,6 @@
       <span><em>({{ $ctrl.portfolio.roles.length - $ctrl.showExperience}} roles elided)</em></span>
 
       <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.showExperience">
-        <!-- <strong>{{role.type}} {{role.title}} at <em>{{role.company}}</em></strong> -->
         <h4>
           {{role.type}} {{role.title}}
           <small>
