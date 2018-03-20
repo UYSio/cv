@@ -6,15 +6,15 @@
         // If we don't pass any data, return out of the element
         if (!data) return;
 
-        var margin = parseInt(attrs.margin) || 2,
-              barHeight = parseInt(attrs.barHeight) || 2,
-              barPadding = parseInt(attrs.barPadding) || 1;
+        var margin = parseInt(attrs.margin) || 20,
+              barHeight = parseInt(attrs.barHeight) || 20,
+              barPadding = parseInt(attrs.barPadding) || 5;
         // setup variables
         var width = d3.select(element[0]).node().offsetWidth - margin,
             // calculate the height
             height = data.length * (barHeight + barPadding),
             // Use the category20() scale function for multicolor support
-            color = d3.scaleOrdinal(d3.schemeCategory20),
+            color = d3.scaleOrdinal(d3.schemeCategory20c),
             // our xScale
             xScale = d3.scaleLinear()
                 .domain([0, d3.max(data, function (d) {
@@ -41,6 +41,19 @@
             .attr('width', function (d) {
                 return xScale(d.score);
             });
+
+        svg.selectAll('text')
+            .data(data)
+            .enter()
+              .append('text')
+              .attr('fill', '#000')
+              .attr('y', function(d,i) {
+                return i * (barHeight + barPadding) + 15;
+              })
+              .attr('x', 15)
+              .text(function(d) {
+                return d.name;
+              });
     }
 
     angular.module('app').directive('viz', ['d3', 'portfolio', 'stats', function (d3, portfolio, stats) {
