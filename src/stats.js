@@ -36,16 +36,20 @@
 
         }, {});
 
-        var scoreT = _.transform(score, function (result, value, key) {
+        // array of objects for D3
+        var scoreD3 = _.transform(score, function (result, value, key) {
             result.push({
                 name: key,
                 score: value
             });
         }, []);
 
-        // console.log(scoreT);
+        // order by score
+        var scores = _.orderBy(scoreD3, function (it) {
+            return -it.score;
+        });
 
-        return scoreT;
+        return scores;
     }
     angular.module('app').factory('stats', ['_', 'moment', function (_, moment) {
         return {
