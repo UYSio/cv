@@ -1,9 +1,10 @@
 img.profile {
-    width: $spacing;
+    width: 120px;;
     box-shadow: $card;
     border-radius: 50%;
     float: left;
     margin: $spacing / 3;
+    margin-right: $spacing / 2;
 }
 
 h4.role {
