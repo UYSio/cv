@@ -87,6 +87,23 @@
     ],
     "roles": [
         {
+            "title": "founder",
+            "company": "pdfcrunch",
+            "url": "https://pdfcrun.ch/",
+            "type": "startup",
+            "duties": [
+                "Development of all services",
+                "Deep learning approach for V2 of the core algorithm",
+                "Beta tester liaison",
+                "Growth and customer acquisition"
+            ],
+            "start": "2013-11",
+            "tech": [ "linux", "bash",
+                "python", "keras", "javascript", "html", "css", "angularjs", "postgresql", "flask", "git"
+            ],
+            "current": true
+        },
+        {
             "title": "consultant",
             "company": "barclaycard",
             "url": "https://www.barclaycard.co.uk/",
@@ -214,23 +231,6 @@
                 "python", "docker", "scala", "express", "aws", "heroku", "postgresql", "git", "flask"
             ],
             "current": false
-        },
-        {
-            "title": "founder",
-            "company": "pdfcrunch",
-            "url": "https://pdfcrun.ch/",
-            "type": "startup",
-            "duties": [
-                "Development of all services",
-                "Deep learning approach for V2 of the core algorithm",
-                "Beta tester liaison",
-                "Growth and customer acquisition"
-            ],
-            "start": "2013-11",
-            "tech": [ "linux", "bash",
-                "python", "keras", "javascript", "html", "css", "angularjs", "postgresql", "flask", "git"
-            ],
-            "current": true
         },
         {
             "title": "developer",

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/cv/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521560619"></head> <body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
+<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/cv/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521562341"></head> <body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
 
     <div class="header section">
       <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
@@ -11,10 +11,14 @@
     <div class="section">
       <h3>
         <i class="icon" style="background-image: url('{{$ctrl.images.icons.software}}');"></i>
-        Toolkit (top {{$ctrl.showNSkills}})
+        Toolkit 
+        <span ng-if="$ctrl.show.skills.n < $ctrl.show.skills.max">(top {{$ctrl.show.skills.n}})</span>
       </h3>
-      <viz show="$ctrl.showNSkills"></viz>
-      <a class="showmore" href="" ng-click="$ctrl.showMore()">Show {{$ctrl.showNSkillsInit}} more...</a>
+
+      <a ng-if="$ctrl.show.skills.n < $ctrl.show.skills.max" class="showmore" href="" ng-click="$ctrl.showMore('skills', 10)">Show 10 more...</a>
+
+      <viz show="$ctrl.show.skills.n"></viz>
+      
     </div>
 
     <div class="personal_and_skills section">
@@ -58,11 +62,12 @@
       <h3>
         <i class="icon" style="background-image: url('{{$ctrl.images.icons.experience}}');"></i>
         Experience
+        <span ng-if="$ctrl.show.experience.n < $ctrl.show.experience.max">(latest {{$ctrl.show.experience.n}})</span>
       </h3>
 
-      <span><em>({{ $ctrl.portfolio.roles.length - $ctrl.showExperience}} roles elided)</em></span>
+      <a ng-if="$ctrl.show.experience.n < $ctrl.show.experience.max" class="showmore" href="" ng-click="$ctrl.showMore('experience', 2)">Show 2 more...</a>
 
-      <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.showExperience">
+      <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.show.experience.n">
         <h4>
           {{role.type}} {{role.title}}
           <small>
@@ -88,12 +93,13 @@
         <h3>
           <i class="icon" style="background-image: url('{{$ctrl.images.icons.education}}');"></i>
           Education
+          <span ng-if="$ctrl.show.education.n < $ctrl.show.education.max">(latest {{$ctrl.show.education.n}})</span>
         </h3>
 
-        <span><em>({{ $ctrl.portfolio.education.length - $ctrl.showEducation}} items elided)</em></span>
+        <a ng-if="$ctrl.show.education.n < $ctrl.show.education.max" class="showmore" href="" ng-click="$ctrl.showMore('education', 10)">Show more...</a>
 
         <dl>
-          <dt ng-repeat-start="it in $ctrl.portfolio.education | limitTo: $ctrl.showEducation">{{it.institution}} ({{it.year}})</dt>
+          <dt ng-repeat-start="it in $ctrl.portfolio.education | limitTo: $ctrl.show.education.n">{{it.institution}} ({{it.year}})</dt>
           <dd ng-repeat-end>{{it.course}}</dd>
         </dl>
       </div>
@@ -120,4 +126,4 @@
       src="{{$ctrl.images.$404}}"></async-img>
 
   </script> <script type="text/ng-template" id="viz.html">
-  </script> <script src="uysio.js?1521560619"></script> </body> </html> 
+  </script> <script src="uysio.js?1521562341"></script> </body> </html> 
