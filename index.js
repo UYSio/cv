@@ -9,10 +9,13 @@ require('angular-animate');
 require('ng-async-img');
 require('angular-moment');
 
-import moment from 'moment';
+import Moment from 'moment';
+import { extendMoment } from 'moment-range'; 
+const moment = extendMoment(Moment);
+
 import _ from 'lodash';
 
-var app = angular.module('app', ['ui.router', 'ngAnimate', 'ngAsyncImg', 'angularMoment']);
+var app = angular.module('app', ['ui.router', 'ngAnimate', 'ngAsyncImg']);
 app.constant('portfolio', portfolio);
 app.constant('_', _);
 app.constant('moment', moment);

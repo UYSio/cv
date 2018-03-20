@@ -1,4 +1,5 @@
 (function () {
+    
     // http://ejohn.org/blog/partial-functions-in-javascript/
     Function.prototype.curry = function () {
         var fn = this, args = Array.prototype.slice.call(arguments);
@@ -8,16 +9,9 @@
         };
     };
 
-    function monthDiff(d1, d2) {
-        var months;
-        months = (d2.getFullYear() - d1.getFullYear()) * 12;
-        months -= d1.getMonth() + 1;
-        months += d2.getMonth();
-        return months <= 0 ? 0 : months;
-    }
-
     function calc(_, moment, data) {
-        var it = _.map(data.roles, function (role) {
+
+        var score = _.reduce(data.roles, function (aggr, role) {
 
             var start = moment(role.start).format('YYYY-MM');
             var end;
@@ -27,11 +21,22 @@
                 // no end date means "until now"
                 end = moment().format('YYYY-MM');
             }
-            // var range = moment().range(start, end);
-            // var diff = range.diff('months');
+            var range = moment().range(start, end);
+            // add 1, because 1st of 'start' and 28-31st of 'end' is presumed
+            var months = range.diff('months') + 1;
             
-            console.log(start, end);
-        });
+            return _.reduce(role.tech, function (_aggr, tech) {
+                if (!_aggr[tech]) {
+                    _aggr[tech] = months;
+                } else {
+                    _aggr[tech] += months;
+                }
+                return _aggr;
+            }, aggr);
+
+        }, {});
+
+        console.log(score);
         
     }
     angular.module('app').factory('stats', ['_', 'moment', function (_, moment) {
