@@ -16,6 +16,7 @@ var app = angular.module('app', ['ui.router', 'ngAnimate', 'ngAsyncImg', 'angula
 app.constant('portfolio', portfolio);
 app.constant('_', _);
 app.constant('moment', moment);
+app.constant('d3', require('d3'));
 app.constant('images', {
     profilePicImgURL: require('./images/juan.jpg'),
     $404: require('./images/404.jpg'),
@@ -37,3 +38,4 @@ app.filter('abs', function() {
 require('./src/routes.js');
 require('./src/home.js');
 require('./src/404.js');
+require('./src/viz.js');
