@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/cv/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521545523"></head> <body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
+<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/cv/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521546008"></head> <body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
 
     <div class="header section">
       <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
@@ -54,7 +54,6 @@
       <span><em>({{ $ctrl.portfolio.roles.length - $ctrl.showExperience}} roles elided)</em></span>
 
       <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.showExperience">
-        <strong>{{role.type}} {{role.title}} at <em>{{role.company}}</em></strong> -->
         <h4>
           {{role.type}} {{role.title}}
           <small>
@@ -111,4 +110,4 @@
       class="headerimage intro"
       src="{{$ctrl.images.$404}}"></async-img>
 
-  </script> <script src="uysio.js?1521545523"></script> </body> </html> 
+  </script> <script src="uysio.js?1521546008"></script> </body> </html> 
