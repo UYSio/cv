@@ -9,11 +9,36 @@
     ctrl.showExperience = 5;
     ctrl.showEducation = 5;
 
-    ctrl.showNSkillsInit = 10;
-    ctrl.showNSkills = 10;
+    var maxSkills = _.uniq(_.reduce(portfolio.roles, function (aggr, role) {
+      return _.reduce(role.tech, function (aggr, tech) {
+        aggr.push(tech);
+        return aggr;
+      }, aggr)
+    }, [])).length;
 
-    ctrl.showMore = function() {
-      ctrl.showNSkills += ctrl.showNSkillsInit;
+    ctrl.show = {
+      experience: {
+        n: 5,
+        max: portfolio.roles.length
+      },
+      education: {
+        n: 5,
+        max: portfolio.education.length
+      },
+      skills: {
+        n: 10,
+        max: maxSkills
+      }
+    };
+
+    ctrl.showMore = function(what, n) {
+      // console.log('adding', n, 'to', what);
+      var total = ctrl.show[what].n + n;
+      // console.log('what', ctrl.show[what].n, 'total', total);
+      // console.log('min of', ctrl.show[what].max, total);
+      total = Math.min(ctrl.show[what].max, total);
+      // console.log('total now', total);
+      ctrl.show[what].n = total;
     };
   }
 

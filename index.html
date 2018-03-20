@@ -32,10 +32,11 @@
     <div class="section">
       <h3>
         <i class="icon" style="background-image: url('{{$ctrl.images.icons.software}}');"></i>
-        Toolkit (top {{$ctrl.showNSkills}})
+        Toolkit 
+        <span ng-if="$ctrl.show.skills.n < $ctrl.show.skills.max">(top {{$ctrl.show.skills.n}})</span>
       </h3>
-      <viz show="$ctrl.showNSkills"></viz>
-      <a class="showmore" href="" ng-click="$ctrl.showMore()">Show {{$ctrl.showNSkillsInit}} more...</a>
+      <viz show="$ctrl.show.skills.n"></viz>
+      <a ng-if="$ctrl.show.skills.n < $ctrl.show.skills.max" class="showmore" href="" ng-click="$ctrl.showMore('skills', 10)">Show 10 more...</a>
     </div>
 
     <div class="personal_and_skills section">
