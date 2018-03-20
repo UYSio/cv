@@ -121,7 +121,7 @@
             ],
             "start": "2017-09",
             "end": "2017-12",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "java", "dropwizard", "mongodb", "react", "javascript", "html", "css", "jenkins", "git"
             ],
             "current": false
@@ -141,7 +141,7 @@
             ],
             "start": "2017-02",
             "end": "2017-08",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "apigee", "mqtt", "mosquitto", "aws", "groovy", "java", "rxjava", "couchdb",
                 "vert.x", "kafka", "splunk", "appdynamics", "runscope", "jenkins", "cloudformation", "git"
             ],
@@ -160,7 +160,7 @@
             ],
             "start": "2016-05",
             "end": "2017-02",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "d3.js", "javascript", "html", "css", "typescript", "angularjs", "angular2", "mongodb", "express",
                 "circleci", "docker", "aws", "git"
             ],
@@ -188,7 +188,7 @@
             ],
             "start": "2015-07",
             "end": "2016-03",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "clojure", "clojurescript", "ruby", "php", "kubernetes", "docker", "aws",
                 "magento", "hybris", "mirakl", "hapijs", "swagger", "react", "javascript", "html", "css",
                 "kong", "lua", "git"
@@ -210,7 +210,7 @@
             ],
             "start": "2014-03",
             "end": "2015-06",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "python", "docker", "scala", "express", "aws", "heroku", "postgresql", "git", "flask"
             ],
             "current": false
@@ -227,7 +227,7 @@
                 "Growth and customer acquisition"
             ],
             "start": "2013-11",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "python", "keras", "javascript", "html", "css", "angularjs", "postgresql", "flask", "git"
             ],
             "current": true
@@ -246,7 +246,7 @@
             ],
             "start": "2013-08",
             "end": "2014-03",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "scala", "angularjs", "aws", "git"
             ],
             "current": false
@@ -262,7 +262,7 @@
             ],
             "start": "2013-08",
             "end": "2014-03",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "java", "playframework", "mysql", "aws", "ansible", "git"
             ],
             "current": false
@@ -278,7 +278,7 @@
             ],
             "start": "2013-08",
             "end": "2014-03",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "scala", "akka", "angularjs", "javascript", "html", "css", "postgresql", "aws", "git"
             ],
             "current": false
@@ -297,7 +297,7 @@
             ],
             "start": "2012-03",
             "end": "2013-03",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "scala", "playframework2", "heroku", "aws", "postgresql", "blitline", "twilio", "pubnub", "urban airship", "mailgun", "git"
             ],
             "current": false
@@ -320,7 +320,7 @@
             ],
             "start": "2007-01",
             "end": "2013-08",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "java", "scala", "lift", "soap", "xml", "alfresco", "activiti", "spring batch", "apache nutch", "lucene", "solr", "elasticsearch", "jenkins", "svn", "git"
             ],
             "current": false
@@ -336,7 +336,7 @@
             ],
             "start": "2005-12",
             "end": "2006-07",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "java", "ruby", "rails", "javascript", "html", "css", "ajax", "cvs"
             ],
             "current": false
@@ -352,7 +352,7 @@
             ],
             "start": "2005-10",
             "end": "2005-12",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "php", "javascript", "html", "css", "mysql", "perl", "cvs"
             ],
             "current": false
@@ -368,7 +368,7 @@
             ],
             "start": "2004-05",
             "end": "2005-11",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "c#", "sql server", "visual source safe", "javascript", "html", "css"
             ],
             "current": false
@@ -385,7 +385,7 @@
             ],
             "start": "2003-10",
             "end": "2004-03",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "java", "coldfusion", "sql server", "dreamweaver", "visual source safe", "uml", "soap", "c#", "rational clearcase", "websphere", "tomcat", "jetty"
             ],
             "current": false
@@ -407,7 +407,7 @@
             ],
             "start": "2002-05",
             "end": "2003-09",
-            "tech": [
+            "tech": [ "linux", "bash",
                 "java", "postgresql", "javascript", "html", "css", "tomcat", "apache", "netbeans", "xslt", "flash", "vbscript", "macromedia", "photoshop", "wap", "j2me", "webmin", "perl", "sendmail"
             ],
             "current": false
