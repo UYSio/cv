@@ -32,9 +32,10 @@
     <div class="section">
       <h3>
         <i class="icon" style="background-image: url('{{$ctrl.images.icons.software}}');"></i>
-        Toolkit
+        Toolkit (top {{$ctrl.showNSkills}})
       </h3>
-      <viz></viz>
+      <viz show="$ctrl.showNSkills"></viz>
+      <a href="" ng-click="$ctrl.showMore()">Show {{$ctrl.showNSkillsInit}} more...</a>
     </div>
 
     <div class="personal_and_skills section">

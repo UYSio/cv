@@ -8,6 +8,13 @@
 
     ctrl.showExperience = 5;
     ctrl.showEducation = 5;
+
+    ctrl.showNSkillsInit = 7;
+    ctrl.showNSkills = 7;
+
+    ctrl.showMore = function() {
+      ctrl.showNSkills += ctrl.showNSkillsInit;
+    };
   }
 
   angular.module('app').component('home', {
