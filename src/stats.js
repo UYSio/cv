@@ -36,8 +36,16 @@
 
         }, {});
 
-        console.log(score);
-        
+        var scoreT = _.transform(score, function (result, value, key) {
+            result.push({
+                name: key,
+                score: value
+            });
+        }, []);
+
+        // console.log(scoreT);
+
+        return scoreT;
     }
     angular.module('app').factory('stats', ['_', 'moment', function (_, moment) {
         return {
