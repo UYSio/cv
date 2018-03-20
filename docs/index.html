@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/cv/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521562341"></head> <body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
+<!DOCTYPE html> <html lang="en" data-ng-app="app"> <head> <meta charset="UTF-8"> <base href="/cv/"> <title>Juan Uys &mdash; coder creative</title> <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> <link rel="stylesheet" href="uysio.css?1521562817"></head> <body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
 
     <div class="header section">
       <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
@@ -115,6 +115,10 @@
       </div>
     </div>
 
+    <div class="end section">
+      <small>Thanks for taking a look!</small>
+      <hr>
+      <p>This CV is data-driven and the source code is at <a href="https://github.com/uysio/cv">https://github.com/uysio/cv</a></p>
     </div>
 
   </script> <script type="text/ng-template" id="404.html">
@@ -126,4 +130,4 @@
       src="{{$ctrl.images.$404}}"></async-img>
 
   </script> <script type="text/ng-template" id="viz.html">
-  </script> <script src="uysio.js?1521562341"></script> </body> </html> 
+  </script> <script src="uysio.js?1521562817"></script> </body> </html> 
