@@ -3,7 +3,7 @@
         console.log('rendering...');
     }
 
-    angular.module('app').directive('viz', ['d3', 'portfolio', function (d3, portfolio) {
+    angular.module('app').directive('viz', ['d3', 'portfolio', 'stats', function (d3, portfolio, stats) {
         return {
             scope: {
             },
@@ -18,7 +18,7 @@
                 scope.$watch(function() {
                     return angular.element(window)[0].innerWidth;
                 }, function() {
-                    scope.render(d3, svg, portfolio);
+                    scope.render(d3, svg, stats.calc(portfolio));
                 });
 
                 scope.render = render;

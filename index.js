@@ -39,3 +39,4 @@ require('./src/routes.js');
 require('./src/home.js');
 require('./src/404.js');
 require('./src/viz.js');
+require('./src/stats.js');
