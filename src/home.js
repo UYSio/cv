@@ -9,12 +9,21 @@
     ctrl.showExperience = 5;
     ctrl.showEducation = 5;
 
-    var maxTech = _.uniq(_.reduce(portfolio.roles, function (aggr, role) {
-      return _.reduce(role.tech, function (aggr, tech) {
-        aggr.push(tech);
+    var byTech =  _.reduce(['programming', 'framework', 'database', 'other'], function (aggr, cat) {
+      var len =_.uniq(_.reduce(portfolio.roles, function (aggr, role) {
+        var byCat = _.reduce(role.techcat[cat], function (aggr, tech) {
+          aggr.push(tech);
+          return aggr;
+        }, aggr);
+        aggr.concat(byCat);
         return aggr;
-      }, aggr)
-    }, [])).length;
+      }, [])).length;
+
+      aggr[cat] = len;
+      return aggr;
+    }, {});
+    
+    var maxTech = _.max(_.values(byTech));
 
     ctrl.show = {
       experience: {
