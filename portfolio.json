@@ -99,7 +99,8 @@
             ],
             "start": "2013-11",
             "tech": [ "linux", "bash",
-                "python", "keras", "javascript", "html", "css", "angularjs", "postgresql", "flask", "git"
+                "python", "keras", "javascript", "html", "css", "angularjs", "postgresql",
+                "flask", "git", "rest-api"
             ],
             "current": true
         },
@@ -117,7 +118,7 @@
             "start": "2018-01",
             "end": "2018-03",
             "tech": [
-                "java", "soap", "xml", "apache cxf", "jboss", "jenkins", "svn"
+                "java", "soap-xml", "apache cxf", "jboss", "jenkins", "svn"
             ],
             "current": true
         },
@@ -139,7 +140,8 @@
             "start": "2017-09",
             "end": "2017-12",
             "tech": [ "linux", "bash",
-                "java", "dropwizard", "mongodb", "react", "javascript", "html", "css", "jenkins", "git"
+                "java", "dropwizard", "mongodb", "react", "javascript", "html", "css",
+                "jenkins", "git", "rest-api"
             ],
             "current": false
         },
@@ -160,7 +162,8 @@
             "end": "2017-08",
             "tech": [ "linux", "bash",
                 "apigee", "mqtt", "mosquitto", "aws", "groovy", "java", "rxjava", "couchdb",
-                "vert.x", "kafka", "splunk", "appdynamics", "runscope", "jenkins", "cloudformation", "git"
+                "vert.x", "kafka", "splunk", "appdynamics", "runscope", "jenkins",
+                "cloudformation", "git", "rest-api"
             ],
             "current": false
         },
@@ -179,7 +182,7 @@
             "end": "2017-02",
             "tech": [ "linux", "bash",
                 "d3.js", "javascript", "html", "css", "typescript", "angularjs", "angular2", "mongodb", "express",
-                "circleci", "docker", "aws", "git"
+                "circleci", "docker", "aws", "git", "rest-api"
             ],
             "current": false
         },
@@ -208,7 +211,7 @@
             "tech": [ "linux", "bash",
                 "clojure", "clojurescript", "ruby", "php", "kubernetes", "docker", "aws",
                 "magento", "hybris", "mirakl", "hapijs", "swagger", "react", "javascript", "html", "css",
-                "kong", "lua", "git"
+                "kong", "lua", "git", "rest-api"
             ],
             "current": false
         },
@@ -228,7 +231,8 @@
             "start": "2014-03",
             "end": "2015-06",
             "tech": [ "linux", "bash",
-                "python", "docker", "scala", "express", "aws", "heroku", "postgresql", "git", "flask"
+                "python", "docker", "scala", "express", "aws", "heroku", "postgresql", "git",
+                "flask", "rest-api"
             ],
             "current": false
         },
@@ -247,7 +251,7 @@
             "start": "2013-08",
             "end": "2014-03",
             "tech": [ "linux", "bash",
-                "scala", "angularjs", "aws", "git"
+                "scala", "angularjs", "aws", "git", "rest-api"
             ],
             "current": false
         },
@@ -263,7 +267,7 @@
             "start": "2013-08",
             "end": "2014-03",
             "tech": [ "linux", "bash",
-                "java", "playframework", "mysql", "aws", "ansible", "git"
+                "java", "playframework", "mysql", "aws", "ansible", "git", "rest-api"
             ],
             "current": false
         },
@@ -279,7 +283,8 @@
             "start": "2013-08",
             "end": "2014-03",
             "tech": [ "linux", "bash",
-                "scala", "akka", "angularjs", "javascript", "html", "css", "postgresql", "aws", "git"
+                "scala", "akka", "angularjs", "javascript", "html", "css", "postgresql",
+                "aws", "git", "rest-api"
             ],
             "current": false
         },
@@ -298,7 +303,8 @@
             "start": "2012-03",
             "end": "2013-03",
             "tech": [ "linux", "bash",
-                "scala", "playframework2", "heroku", "aws", "postgresql", "blitline", "twilio", "pubnub", "urban airship", "mailgun", "git"
+                "scala", "playframework2", "heroku", "aws", "postgresql", "blitline",
+                "twilio", "pubnub", "urban airship", "mailgun", "git", "rest-api"
             ],
             "current": false
         },
@@ -321,7 +327,9 @@
             "start": "2007-01",
             "end": "2013-08",
             "tech": [ "linux", "bash",
-                "java", "scala", "lift", "soap", "xml", "alfresco", "activiti", "spring batch", "apache nutch", "lucene", "solr", "elasticsearch", "jenkins", "svn", "git"
+                "java", "scala", "lift", "soap-xml", "alfresco", "activiti", "spring batch",
+                "apache nutch", "lucene", "solr", "elasticsearch", "jenkins", "svn", "git",
+                "hibernate", "rest-api"
             ],
             "current": false
         },
