@@ -35,19 +35,33 @@
         Toolkit 
       </h3>
 
-      <a ng-if="$ctrl.show.tech.n < $ctrl.show.tech.max" class="showmore" href="" ng-click="$ctrl.showMore('tech', 3)">Show 3 more...</a>
-
-      <h4>Programming</h4>
-      <viz show="$ctrl.show.tech.n" category="programming"></viz>
+      <h4>
+        Programming
+        <span ng-if="$ctrl.show.programming.n < $ctrl.show.programming.max">(top {{$ctrl.show.programming.n}})</span>
+      </h4>
+      <a ng-if="$ctrl.show.programming.n < $ctrl.show.programming.max" class="showmore" href="" ng-click="$ctrl.showMore('programming', 3)">Show 3 more...</a>
+      <viz show="$ctrl.show.programming.n" category="programming"></viz>
       
-      <h4>Framework</h4>
-      <viz show="$ctrl.show.tech.n" category="framework"></viz>
+      <h4>
+        Framework
+        <span ng-if="$ctrl.show.framework.n < $ctrl.show.framework.max">(top {{$ctrl.show.framework.n}})</span>
+      </h4>
+      <a ng-if="$ctrl.show.framework.n < $ctrl.show.framework.max" class="showmore" href="" ng-click="$ctrl.showMore('framework', 3)">Show 3 more...</a>
+      <viz show="$ctrl.show.framework.n" category="framework"></viz>
 
-      <h4>Database</h4>
-      <viz show="$ctrl.show.tech.n" category="database"></viz>
+      <h4>
+        Database
+        <span ng-if="$ctrl.show.database.n < $ctrl.show.database.max">(top {{$ctrl.show.database.n}})</span>
+      </h4>
+      <a ng-if="$ctrl.show.database.n < $ctrl.show.database.max" class="showmore" href="" ng-click="$ctrl.showMore('database', 3)">Show 3 more...</a>
+      <viz show="$ctrl.show.database.n" category="database"></viz>
 
-      <h4>Other</h4>
-      <viz show="$ctrl.show.tech.n" category="other"></viz>
+      <h4>
+        Other
+        <span ng-if="$ctrl.show.other.n < $ctrl.show.other.max">(top {{$ctrl.show.other.n}})</span>
+      </h4>
+      <a ng-if="$ctrl.show.other.n < $ctrl.show.other.max" class="showmore" href="" ng-click="$ctrl.showMore('other', 3)">Show 3 more...</a>
+      <viz show="$ctrl.show.other.n" category="other"></viz>
     </div>
 
     <div class="personal_and_skills section">

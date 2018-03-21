@@ -18,12 +18,11 @@
         aggr.concat(byCat);
         return aggr;
       }, [])).length;
-
       aggr[cat] = len;
       return aggr;
     }, {});
-    
-    var maxTech = _.max(_.values(byTech));
+
+    var byTechVals = _.values(byTech);
 
     ctrl.show = {
       experience: {
@@ -34,9 +33,21 @@
         n: 5,
         max: portfolio.education.length
       },
-      tech: {
+      programming: {
         n: 3,
-        max: maxTech
+        max: byTechVals[0]
+      },
+      framework: {
+        n: 3,
+        max: byTechVals[1]
+      },
+      database: {
+        n: 3,
+        max: byTechVals[2]
+      },
+      other: {
+        n: 3,
+        max: byTechVals[3]
       }
     };
 

@@ -403,10 +403,10 @@
             "techcat": {
                 "programming": ["java", "scala", "javascript"],
                 "framework": ["spring"],
-                "database": ["mysql", "hibernate"],
+                "database": ["mysql"],
                 "other": ["apache", "linux", "shell-scripting", "soap-xml", "lucene", "solr",
                     "elasticsearch", "jenkins", "svn", "git", "rest-api", "spring-batch",
-                    "apache-nutch", "alfresco", "activiti", "bouncycastle"]
+                    "apache-nutch", "alfresco", "activiti", "bouncycastle", "hibernate"]
             },
             "current": false
         },
