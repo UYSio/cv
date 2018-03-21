@@ -18,8 +18,8 @@
             var width = d3.select(element[0]).node().offsetWidth - margin,
                 // calculate the height
                 height = data.length * (barHeight + barPadding),
-                // Use the category20() scale function for multicolor support
-                color = d3.scaleOrdinal(d3.schemeCategory20c),
+                // color = d3.scaleOrdinal(d3.schemeCategory20b),
+                color = d3.scaleOrdinal(d3.schemePastel1),
                 // our xScale
                 xScale = d3.scaleLinear()
                     .domain([0, d3.max(data, function (d) {
@@ -65,7 +65,8 @@
     angular.module('app').directive('viz', ['d3', 'portfolio', 'stats', '$timeout',  function (d3, portfolio, stats, $timeout) {
         return {
             scope: {
-                show: '='
+                show: '=',
+                category: '@'
             },
             templateUrl: 'viz.html',
             link: function (scope, element, attrs) {
@@ -80,11 +81,11 @@
                 scope.$watch(function () {
                     return angular.element(window)[0].innerWidth;
                 }, function () {
-                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio), $timeout, renderTimeout);
+                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio, scope.category), $timeout, renderTimeout);
                 });
 
                 scope.$watch('show', function() {
-                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio), $timeout, renderTimeout);
+                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio, scope.category), $timeout, renderTimeout);
                 });
                 scope.render = render;
             }

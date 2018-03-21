@@ -3,11 +3,15 @@ import './css/main.scss';
 // data
 import portfolio from './portfolio.json';
 
-require('angular');
+var angular = require('angular');
 require('@uirouter/angularjs');
 require('angular-animate');
 require('ng-async-img');
 require('angular-moment');
+
+var d3 = require('d3');
+import {schemePastel1} from 'd3-scale-chromatic';
+d3.schemePastel1 = schemePastel1;
 
 import Moment from 'moment';
 import { extendMoment } from 'moment-range'; 
@@ -19,7 +23,7 @@ var app = angular.module('app', ['ui.router', 'ngAnimate', 'ngAsyncImg']);
 app.constant('portfolio', portfolio);
 app.constant('_', _);
 app.constant('moment', moment);
-app.constant('d3', require('d3'));
+app.constant('d3', d3);
 app.constant('images', {
     profilePicImgURL: require('./images/juan.jpg'),
     $404: require('./images/404.jpg'),

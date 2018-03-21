@@ -9,7 +9,7 @@
         };
     };
 
-    function calc(_, moment, data) {
+    function calc(_, moment, data, category) {
 
         var score = _.reduce(data.roles, function (aggr, role) {
 
@@ -25,7 +25,7 @@
             // add 1, because 1st of 'start' and 28-31st of 'end' is presumed
             var months = range.diff('months') + 1;
             
-            return _.reduce(role.tech, function (_aggr, tech) {
+            return _.reduce(role.techcat[category], function (_aggr, tech) {
                 if (!_aggr[tech]) {
                     _aggr[tech] = months;
                 } else {

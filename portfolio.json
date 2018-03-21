@@ -344,7 +344,7 @@
             ],
             "techcat": {
                 "programming": ["scala", "javscript", "html", "css"],
-                "framework": ["akka", "angularjs"],
+                "framework": ["lift", "akka", "angularjs"],
                 "database": ["postgresql"],
                 "other": ["nginx", "shell-scripting", "aws", "git", "rest-api"]
             },
@@ -402,10 +402,11 @@
             ],
             "techcat": {
                 "programming": ["java", "scala", "javascript"],
-                "framework": ["lift", "spring", "spring-batch", "apache-nutch", "alfresco", "activiti", "bouncycastle"],
+                "framework": ["spring"],
                 "database": ["mysql", "hibernate"],
                 "other": ["apache", "linux", "shell-scripting", "soap-xml", "lucene", "solr",
-                    "elasticsearch", "jenkins", "svn", "git", "rest-api"]
+                    "elasticsearch", "jenkins", "svn", "git", "rest-api", "spring-batch",
+                    "apache-nutch", "alfresco", "activiti", "bouncycastle"]
             },
             "current": false
         },

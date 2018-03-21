@@ -9,7 +9,7 @@
     ctrl.showExperience = 5;
     ctrl.showEducation = 5;
 
-    var maxSkills = _.uniq(_.reduce(portfolio.roles, function (aggr, role) {
+    var maxTech = _.uniq(_.reduce(portfolio.roles, function (aggr, role) {
       return _.reduce(role.tech, function (aggr, tech) {
         aggr.push(tech);
         return aggr;
@@ -25,9 +25,9 @@
         n: 5,
         max: portfolio.education.length
       },
-      skills: {
-        n: 10,
-        max: maxSkills
+      tech: {
+        n: 3,
+        max: maxTech
       }
     };
 

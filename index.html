@@ -33,13 +33,22 @@
       <h3>
         <i class="icon" style="background-image: url('{{$ctrl.images.icons.software}}');"></i>
         Toolkit 
-        <span ng-if="$ctrl.show.skills.n < $ctrl.show.skills.max">(top {{$ctrl.show.skills.n}})</span>
+        <span ng-if="$ctrl.show.tech.n < $ctrl.show.tech.max">(top {{$ctrl.show.tech.n}})</span>
       </h3>
 
-      <a ng-if="$ctrl.show.skills.n < $ctrl.show.skills.max" class="showmore" href="" ng-click="$ctrl.showMore('skills', 10)">Show 10 more...</a>
+      <a ng-if="$ctrl.show.tech.n < $ctrl.show.tech.max" class="showmore" href="" ng-click="$ctrl.showMore('tech', 3)">Show 3 more...</a>
 
-      <viz show="$ctrl.show.skills.n"></viz>
+      <h4>Programming</h4>
+      <viz show="$ctrl.show.tech.n" category="programming"></viz>
       
+      <h4>Framework</h4>
+      <viz show="$ctrl.show.tech.n" category="framework"></viz>
+
+      <h4>Database</h4>
+      <viz show="$ctrl.show.tech.n" category="database"></viz>
+
+      <h4>Other</h4>
+      <viz show="$ctrl.show.tech.n" category="other"></viz>
     </div>
 
     <div class="personal_and_skills section">
