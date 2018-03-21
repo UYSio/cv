@@ -22,9 +22,9 @@
 }
 
 .showmore {
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
     color: $brand;
     text-decoration: $brand underline solid;
-    float: right;
+    clear: both;
 }

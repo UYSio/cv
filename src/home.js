@@ -11,7 +11,7 @@
 
     var byTech =  _.reduce(['programming', 'framework', 'database', 'other'], function (aggr, cat) {
       var len =_.uniq(_.reduce(portfolio.roles, function (aggr, role) {
-        var byCat = _.reduce(role.techcat[cat], function (aggr, tech) {
+        var byCat = _.reduce(role.tech[cat], function (aggr, tech) {
           aggr.push(tech);
           return aggr;
         }, aggr);

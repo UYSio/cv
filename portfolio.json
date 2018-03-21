@@ -98,11 +98,7 @@
                 "Growth and customer acquisition"
             ],
             "start": "2013-11",
-            "tech": [ "linux", "shell-scripting",
-                "python", "keras", "javascript", "html", "css", "angularjs", "postgresql",
-                "flask", "git", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["python", "javascript", "html", "css", "clojure", "java", "scala"],
                 "framework": ["angularjs", "flask", "keras"],
                 "database": ["postgresql"],
@@ -123,10 +119,7 @@
             ],
             "start": "2018-01",
             "end": "2018-03",
-            "tech": [
-                "java", "soap-xml", "apache cxf", "jboss", "jenkins", "svn"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["java", "javascript"],
                 "framework": ["apache-cxf"],
                 "database": ["oracle"],
@@ -151,11 +144,7 @@
             ],
             "start": "2017-09",
             "end": "2017-12",
-            "tech": [ "linux", "shell-scripting",
-                "java", "dropwizard", "mongodb", "react", "javascript", "html", "css",
-                "jenkins", "git", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["java", "javascript", "html", "css", "groovy"],
                 "framework": ["dropwizard", "react", "selenium"],
                 "database": ["mongodb"],
@@ -178,12 +167,7 @@
             ],
             "start": "2017-02",
             "end": "2017-08",
-            "tech": [ "linux", "shell-scripting",
-                "apigee", "mqtt", "mosquitto", "aws", "groovy", "java", "rxjava", "couchdb",
-                "vert.x", "kafka", "splunk", "appdynamics", "runscope", "jenkins",
-                "cloudformation", "git", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["java", "groovy"],
                 "framework": ["rxjava", "vertx", "kafka"],
                 "database": ["couchbase"],
@@ -205,11 +189,7 @@
             ],
             "start": "2016-05",
             "end": "2017-02",
-            "tech": [ "linux", "shell-scripting",
-                "d3.js", "javascript", "html", "css", "typescript", "angularjs", "angular2", "mongodb", "express",
-                "circleci", "docker", "aws", "git", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["javascript", "typescript", "html", "css"],
                 "framework": ["express", "angularjs", "angular2", "d3.js"],
                 "database": ["mongodb"],
@@ -239,12 +219,7 @@
             ],
             "start": "2015-07",
             "end": "2016-03",
-            "tech": [ "linux", "shell-scripting",
-                "clojure", "clojurescript", "ruby", "php", "kubernetes", "docker", "aws",
-                "magento", "hybris", "mirakl", "hapijs", "swagger", "react", "javascript", "html", "css",
-                "kong", "lua", "git", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["javascript", "ruby", "php", "lua", "html", "css", "python"],
                 "framework": ["magento", "hybris", "hapijs", "react", "cucumber"],
                 "database": ["mysql"],
@@ -268,11 +243,7 @@
             ],
             "start": "2014-03",
             "end": "2015-06",
-            "tech": [ "linux", "shell-scripting",
-                "python", "docker", "scala", "express", "aws", "heroku", "postgresql", "git",
-                "flask", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["python", "scala"],
                 "framework": ["flask", "express", "dropwizard"],
                 "database": ["postgresql"],
@@ -294,10 +265,7 @@
             ],
             "start": "2013-08",
             "end": "2014-03",
-            "tech": [ "linux", "shell-scripting",
-                "scala", "angularjs", "aws", "git", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["scala", "javascript"],
                 "framework": ["angularjs"],
                 "database": [],
@@ -316,10 +284,7 @@
             ],
             "start": "2013-08",
             "end": "2014-03",
-            "tech": [ "linux", "shell-scripting",
-                "java", "playframework", "mysql", "aws", "ansible", "git", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["java"],
                 "framework": ["playframework"],
                 "database": ["mysql"],
@@ -338,11 +303,7 @@
             ],
             "start": "2013-08",
             "end": "2014-03",
-            "tech": [ "linux", "shell-scripting",
-                "scala", "akka", "angularjs", "javascript", "html", "css", "postgresql",
-                "aws", "git", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["scala", "javscript", "html", "css"],
                 "framework": ["lift", "akka", "angularjs"],
                 "database": ["postgresql"],
@@ -364,11 +325,7 @@
             ],
             "start": "2012-03",
             "end": "2013-03",
-            "tech": [ "linux", "shell-scripting",
-                "scala", "playframework2", "heroku", "aws", "postgresql", "blitline",
-                "twilio", "pubnub", "urban airship", "mailgun", "git", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["scala", "javascript"],
                 "framework": ["playframework2"],
                 "database": ["postgresql"],
@@ -395,12 +352,7 @@
             ],
             "start": "2007-01",
             "end": "2013-08",
-            "tech": [ "linux", "shell-scripting",
-                "java", "scala", "lift", "soap-xml", "alfresco", "activiti", "spring batch",
-                "apache nutch", "lucene", "solr", "elasticsearch", "jenkins", "svn", "git",
-                "hibernate", "rest-api"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["java", "scala", "javascript"],
                 "framework": ["spring"],
                 "database": ["mysql"],
@@ -421,10 +373,7 @@
             ],
             "start": "2005-12",
             "end": "2006-07",
-            "tech": [ "linux", "shell-scripting",
-                "java", "ruby", "rails", "javascript", "html", "css", "ajax", "cvs"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["java", "ruby", "javascript", "html", "css"],
                 "framework": ["rails", "ajax"],
                 "database": ["mysql"],
@@ -443,10 +392,7 @@
             ],
             "start": "2005-10",
             "end": "2005-12",
-            "tech": [ "linux", "shell-scripting",
-                "php", "javascript", "html", "css", "mysql", "perl", "cvs"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["php", "javascript", "html", "css", "perl"],
                 "framework": [],
                 "database": ["mysql"],
@@ -465,10 +411,7 @@
             ],
             "start": "2004-05",
             "end": "2005-11",
-            "tech": [ "linux", "shell-scripting",
-                "c#", "sql server", "visual source safe", "javascript", "html", "css"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["c#", "javascript", "html", "css"],
                 "framework": [".net"],
                 "database": ["sql-server"],
@@ -488,10 +431,7 @@
             ],
             "start": "2003-10",
             "end": "2004-03",
-            "tech": [ "linux", "shell-scripting",
-                "java", "coldfusion", "sql server", "dreamweaver", "visual source safe", "uml", "soap", "c#", "rational clearcase", "websphere", "tomcat", "jetty"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["java", "coldfusion", "c#"],
                 "framework": ["j2ee", ".net"],
                 "database": ["sql-server"],
@@ -517,10 +457,7 @@
             ],
             "start": "2002-05",
             "end": "2003-09",
-            "tech": [ "linux", "shell-scripting",
-                "java", "postgresql", "javascript", "html", "css", "tomcat", "apache", "netbeans", "xslt", "flash", "vbscript", "macromedia", "photoshop", "wap", "j2me", "webmin", "perl", "sendmail"
-            ],
-            "techcat": {
+            "tech": {
                 "programming": ["java", "javascript", "html", "css", "xslt", "vbscript", "perl", "wap", "j2me"],
                 "framework": ["servlet", "jsp"],
                 "database": ["postgresql"],

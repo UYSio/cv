@@ -25,7 +25,7 @@
             // add 1, because 1st of 'start' and 28-31st of 'end' is presumed
             var months = range.diff('months') + 1;
             
-            return _.reduce(role.techcat[category], function (_aggr, tech) {
+            return _.reduce(role.tech[category], function (_aggr, tech) {
                 if (!_aggr[tech]) {
                     _aggr[tech] = months;
                 } else {
