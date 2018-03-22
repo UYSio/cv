@@ -11,38 +11,88 @@
 
     function calc(_, moment, data, category) {
 
-        var score = _.reduce(data.roles, function (aggr, role) {
-            if (role.company == 'pdfcrunch') return aggr;
+        var ranges = _.reduce(data.roles, function (aggr, role) {
 
-            var start = moment(role.start).format('YYYY-MM');
+            // role start date
+            var start = moment(role.start).startOf('month').format('YYYY-MM-DD');
+
+            // role end date
             var end;
             if ('end' in role) {
-                end = moment(role.end).format('YYYY-MM');
+                end = moment(role.end).endOf('month').format('YYYY-MM-DD');
             } else {
                 // no end date means "until now"
-                end = moment().format('YYYY-MM');
+                end = moment().format('YYYY-MM-DD');
             }
             var range = moment().range(start, end);
-            // add 1, because 1st of 'start' and 28-31st of 'end' is presumed
-            var months = range.diff('months') + 1;
             
             return _.reduce(role.tech[category], function (_aggr, tech) {
                 if (!_aggr[tech]) {
-                    _aggr[tech] = months;
+                    _aggr[tech] = [range];
                 } else {
-                    _aggr[tech] += months;
+                    _aggr[tech].push(range);
                 }
                 return _aggr;
             }, aggr);
 
         }, {});
 
-        // array of objects for D3
-        var scoreD3 = _.transform(score, function (result, value, key) {
-            result.push({
-                name: key,
-                score: value
-            });
+        // order ranges by start date
+        var scoreD3 = _.transform(ranges, function (result, ranges, key) {
+            
+            if (ranges.length == 1) {
+                var months = ranges[0].diff('months');
+                result.push({
+                    name: key,
+                    score: months
+                });
+            } else {
+
+                // sort ranges by start date
+                var sortedRanges = _.sortBy(ranges, function (range) {
+                    return range.start.unix();
+                });
+
+                var combinedRanges = _.reduce(sortedRanges, function (a, r) {
+                    if (a.length == 0) {
+                        return [r];
+                    } else {
+                        var last = a[a.length - 1];
+                        if (last.overlaps(r, { adjacent: true })) {
+                            var combo = last.add(r, { adjacent: true });
+                            // replace the last range with the combo
+                            a.splice(a.length-1,1, combo);
+                            return a;
+                        } else {
+                            // no overlap, so just append
+                            a.push(r);
+                            return a;
+                        }
+                    }
+                }, []);
+
+                // if (key == 'scala') {
+                //     console.log(key, sortedRanges);
+                //     console.log(key, combinedRanges);
+                // }
+                
+                var sum = _.reduce(combinedRanges, function (a, r) {
+                    var months = r.diff('months');
+                    return a + months;
+                }, 0);
+
+                // scala is an anomaly - my tenure at NAP was quite long,
+                // yet I only picked up Scala 2 years into that job.
+                // so, subtract 2 years.
+                if (key == 'scala') {
+                    sum -= 24;
+                }
+
+                result.push({
+                    name: key,
+                    score: sum
+                });
+            }
         }, []);
 
         // order by score

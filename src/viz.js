@@ -11,7 +11,7 @@
             if (years == 0) {
                 return '< 1';
             } else {
-                return ''+dur.years();
+                return '' + years + 'y ' + dur.months() + 'm';
             }
         }
 
@@ -76,7 +76,13 @@
 
             texts
                 .append('text')
-                .attr('fill', '#fff')
+                .attr('fill', function (d) {
+                    if (d.score > 24) {
+                        return '#fff';
+                    } else {
+                        return '#000';
+                    }
+                })
                 .attr('text-anchor', 'start')
                 .attr('y', function(d,i) {
                     return i * (barHeight + barPadding) + 17;
@@ -84,7 +90,12 @@
                 .transition()
                 .duration(1000)
                 .attr('x', function (d,i) {
-                    return xScale(d.score) + OFFSET - 15;
+                    if (d.score > 24) {
+                        return xScale(d.score) + OFFSET - 50;
+                    } else {
+                        return xScale(d.score) + OFFSET + 20;
+                    }
+                    
                 })
                 .text(years);
 
@@ -107,14 +118,16 @@
 
                 window.onresize = function () { scope.$apply(); };
 
+                var data = stats.calc(portfolio, scope.category);
+
                 scope.$watch(function () {
                     return angular.element(window)[0].innerWidth;
                 }, function () {
-                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio, scope.category), $timeout, renderTimeout, moment);
+                    scope.render(scope.show, attrs, element, d3, svg, data, $timeout, renderTimeout, moment);
                 });
 
-                scope.$watch('show', function() {
-                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio, scope.category), $timeout, renderTimeout, moment);
+                scope.$watch('show', function(n, o) {
+                    scope.render(scope.show, attrs, element, d3, svg, data, $timeout, renderTimeout, moment);
                 });
                 scope.render = render;
             }
