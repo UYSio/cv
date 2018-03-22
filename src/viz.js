@@ -8,10 +8,15 @@
         function years(d) {
             var dur = moment.duration(d.score, "months");
             var years = dur.years();
+            var months = dur.months();
             if (years == 0) {
                 return '< 1';
             } else {
-                return '' + years + 'y ' + dur.months() + 'm';
+                var ret = '' + years + 'y';
+                if (months > 0) {
+                    ret += ' ' + months + 'm';
+                }
+                return ret;
             }
         }
 

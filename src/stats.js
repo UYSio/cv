@@ -40,12 +40,10 @@
         // order ranges by start date
         var scoreD3 = _.transform(ranges, function (result, ranges, key) {
             
+            var sum = 0;
+
             if (ranges.length == 1) {
-                var months = ranges[0].diff('months');
-                result.push({
-                    name: key,
-                    score: months
-                });
+                var sum = ranges[0].diff('months');
             } else {
 
                 // sort ranges by start date
@@ -79,20 +77,24 @@
                 var sum = _.reduce(combinedRanges, function (a, r) {
                     var months = r.diff('months');
                     return a + months;
-                }, 0);
-
-                // scala is an anomaly - my tenure at NAP was quite long,
-                // yet I only picked up Scala 2 years into that job.
-                // so, subtract 2 years.
-                if (key == 'scala') {
-                    sum -= 24;
-                }
-
-                result.push({
-                    name: key,
-                    score: sum
-                });
+                }, 0); 
             }
+
+            // scala is an anomaly - my tenure at NAP was quite long,
+            // yet I only picked up Scala 2 years into that job.
+            // so, subtract 2 years.
+            if (key == 'scala') {
+                sum -= 24;
+            }
+            // same goes for Keras @ pdfcrunch
+            if (key == 'keras') {
+                sum -= 36;
+            }
+
+            result.push({
+                name: key,
+                score: sum
+            });
         }, []);
 
         // order by score
