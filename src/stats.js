@@ -12,6 +12,7 @@
     function calc(_, moment, data, category) {
 
         var score = _.reduce(data.roles, function (aggr, role) {
+            if (role.company == 'pdfcrunch') return aggr;
 
             var start = moment(role.start).format('YYYY-MM');
             var end;

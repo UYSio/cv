@@ -5,9 +5,14 @@
         if (!_data) return;
         if (renderTimeout) clearTimeout(renderTimeout);
 
-        function skillAndYears(d) {
+        function years(d) {
             var dur = moment.duration(d.score, "months");
-            return d.name + ' [' + dur.years() + 'y]';
+            var years = dur.years();
+            if (years == 0) {
+                return '< 1';
+            } else {
+                return ''+dur.years();
+            }
         }
 
         renderTimeout = $timeout(function() {
@@ -18,6 +23,7 @@
             // If we don't pass any data, return out of the element
             if (!data) return;
 
+            var OFFSET = 150;
             var margin = parseInt(attrs.margin) || 20,
                 barHeight = parseInt(attrs.barHeight) || 22,
                 barPadding = parseInt(attrs.barPadding) || 5;
@@ -34,7 +40,7 @@
                     .domain([0, d3.max(data, function (d) {
                         return d.score;
                     })])
-                    .range([0, width]);
+                    .range([0, width-OFFSET]);
 
             // set the height based on the calculations above
             svg.attr('height', height);
@@ -44,8 +50,7 @@
                 .data(data).enter()
                 .append('rect')
                 .attr('height', barHeight)
-                .attr('width', 140)
-                .attr('x', Math.round(margin / 2))
+                .attr('x', Math.round(margin / 2) + OFFSET)
                 .attr('y', function (d, i) {
                     return i * (barHeight + barPadding);
                 })
@@ -56,16 +61,33 @@
                     return xScale(d.score);
                 });
 
-            svg.selectAll('text')
+            var texts = svg.selectAll('text')
                 .data(data)
-                .enter()
+                .enter();
+
+            texts
                 .append('text')
-                .attr('fill', '#fff')
+                .attr('fill', '#222')
                 .attr('y', function(d,i) {
                     return i * (barHeight + barPadding) + 15;
                 })
                 .attr('x', 15)
-                .text(skillAndYears);
+                .text(function (d) { return d.name });
+
+            texts
+                .append('text')
+                .attr('fill', '#fff')
+                .attr('text-anchor', 'start')
+                .attr('y', function(d,i) {
+                    return i * (barHeight + barPadding) + 17;
+                })
+                .transition()
+                .duration(1000)
+                .attr('x', function (d,i) {
+                    return xScale(d.score) + OFFSET - 15;
+                })
+                .text(years);
+
             }, 200);
     }
 
