@@ -1,7 +1,14 @@
 (function () {
-    function render(num, attrs, element, d3, svg, _data, $timeout, renderTimeout) {
+
+    
+    function render(num, attrs, element, d3, svg, _data, $timeout, renderTimeout, moment) {
         if (!_data) return;
         if (renderTimeout) clearTimeout(renderTimeout);
+
+        function skillAndYears(d) {
+            var dur = moment.duration(d.score, "months");
+            return d.name + ' [' + dur.years() + 'y]';
+        }
 
         renderTimeout = $timeout(function() {
             var data = _data.slice(0, num);
@@ -12,14 +19,16 @@
             if (!data) return;
 
             var margin = parseInt(attrs.margin) || 20,
-                barHeight = parseInt(attrs.barHeight) || 20,
+                barHeight = parseInt(attrs.barHeight) || 22,
                 barPadding = parseInt(attrs.barPadding) || 5;
             // setup variables
             var width = d3.select(element[0]).node().offsetWidth - margin,
                 // calculate the height
                 height = data.length * (barHeight + barPadding),
                 // color = d3.scaleOrdinal(d3.schemeCategory20b),
-                color = d3.scaleOrdinal(d3.schemePastel1),
+                // color = d3.scaleOrdinal(d3.schemeDark2),
+                // color = function () { return '#f4b268'; },
+                color = function () { return '#75aafd'; },
                 // our xScale
                 xScale = d3.scaleLinear()
                     .domain([0, d3.max(data, function (d) {
@@ -51,18 +60,16 @@
                 .data(data)
                 .enter()
                 .append('text')
-                .attr('fill', '#000')
+                .attr('fill', '#fff')
                 .attr('y', function(d,i) {
                     return i * (barHeight + barPadding) + 15;
                 })
                 .attr('x', 15)
-                .text(function(d) {
-                    return d.name;
-                });
+                .text(skillAndYears);
             }, 200);
     }
 
-    angular.module('app').directive('viz', ['d3', 'portfolio', 'stats', '$timeout',  function (d3, portfolio, stats, $timeout) {
+    angular.module('app').directive('viz', ['d3', 'portfolio', 'stats', '$timeout', 'moment',  function (d3, portfolio, stats, $timeout, moment) {
         return {
             scope: {
                 show: '=',
@@ -81,11 +88,11 @@
                 scope.$watch(function () {
                     return angular.element(window)[0].innerWidth;
                 }, function () {
-                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio, scope.category), $timeout, renderTimeout);
+                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio, scope.category), $timeout, renderTimeout, moment);
                 });
 
                 scope.$watch('show', function() {
-                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio, scope.category), $timeout, renderTimeout);
+                    scope.render(scope.show, attrs, element, d3, svg, stats.calc(portfolio, scope.category), $timeout, renderTimeout, moment);
                 });
                 scope.render = render;
             }

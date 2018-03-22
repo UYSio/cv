@@ -10,8 +10,9 @@ require('ng-async-img');
 require('angular-moment');
 
 var d3 = require('d3');
-import {schemePastel1} from 'd3-scale-chromatic';
+import {schemePastel1, schemeDark2} from 'd3-scale-chromatic';
 d3.schemePastel1 = schemePastel1;
+d3.schemeDark2 = schemeDark2;
 
 import Moment from 'moment';
 import { extendMoment } from 'moment-range'; 
