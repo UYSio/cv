@@ -92,15 +92,17 @@
             "url": "https://pdfcrun.ch/",
             "type": "startup",
             "duties": [
-                "Development of all services",
+                "Development and operating (devops) of all services",
                 "Deep learning approach for V2 of the core algorithm",
+                "PDF training dataset (80K+ PDFs) obtained with crawler",
+                "Analysis and development using scipy, numpy and Keras",
                 "Beta tester liaison",
                 "Growth and customer acquisition"
             ],
             "start": "2013-11",
             "tech": {
                 "programming": ["python", "javascript", "html", "css", "clojure", "java", "scala"],
-                "framework": ["angularjs", "flask", "keras"],
+                "framework": ["angularjs", "flask", "keras", "scrapy", "scipy", "numpy"],
                 "database": ["postgresql"],
                 "other": ["nginx", "rest-api", "gcloud", "linux", "shell-scripting", "git", "docker", "kubernetes"]
             },
