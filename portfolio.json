@@ -148,7 +148,7 @@
             "end": "2017-12",
             "tech": {
                 "programming": ["java", "javascript", "html", "css", "groovy"],
-                "framework": ["dropwizard", "react", "selenium"],
+                "framework": ["dropwizard", "react", "nodejs", "selenium"],
                 "database": ["mongodb"],
                 "other": ["nginx", "kong", "jenkins", "git", "rest-api", "shell-scripting"]
             },
@@ -193,7 +193,7 @@
             "end": "2017-02",
             "tech": {
                 "programming": ["javascript", "typescript", "html", "css"],
-                "framework": ["express", "angularjs", "angular2", "d3.js"],
+                "framework": ["nodejs", "angularjs", "express", "angular2", "d3.js"],
                 "database": ["mongodb"],
                 "other": ["circleci", "docker", "aws", "git", "rest-api"]
             },
@@ -222,8 +222,8 @@
             "start": "2015-07",
             "end": "2016-03",
             "tech": {
-                "programming": ["javascript", "ruby", "php", "lua", "html", "css", "python"],
-                "framework": ["magento", "hybris", "hapijs", "react", "cucumber"],
+                "programming": ["javascript", "lua", "ruby", "php", "html", "css", "python"],
+                "framework": ["nodejs", "hapijs", "magento", "hybris", "react", "cucumber"],
                 "database": ["mysql"],
                 "other": ["nginx", "swagger", "kong", "kubernetes", "shell-scripting", "git",
                     "rest-api", "docker", "aws", "mirakl", "linux"]
@@ -247,7 +247,7 @@
             "end": "2015-06",
             "tech": {
                 "programming": ["python", "scala"],
-                "framework": ["flask", "express", "dropwizard"],
+                "framework": ["flask", "nodejs", "express", "dropwizard"],
                 "database": ["postgresql"],
                 "other": ["nginx", "linux", "shell-scripting", "docker", "aws", "heroku", "git", "rest-api"]
             },
@@ -370,8 +370,9 @@
             "url": "https://beatthatquote.com",
             "type": "permanent",
             "duties": [
-                "Implemented initial systems as fifth employee and second developer",
-                "Implemented direct-2-broker system rapidly using an early version of Ruby On Rails"
+                "Implemented initial systems as employee #5 / developer #2",
+                "Implemented direct-2-broker system rapidly using an early version of Ruby On Rails",
+                "Acquired by Google"
             ],
             "start": "2005-12",
             "end": "2006-07",

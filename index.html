@@ -123,8 +123,13 @@
           </small>
         </h4>
 
-        
-
+        <ul class="skillmatch">
+          <li ng-repeat="skill in role.tech.programming | limitTo:2">{{skill}}</li>
+          <li ng-repeat="skill in role.tech.framework | limitTo:2">{{skill}}</li>
+          <li ng-repeat="skill in role.tech.database | limitTo:2">{{skill}}</li>
+          <li ng-repeat="skill in role.tech.other | limitTo:2">{{skill}}</li>
+        </ul>
+        <br/>
         <ul>
           <li ng-repeat="duty in role.duties">{{duty}}</li>
         </ul>
