@@ -1,7 +1,7 @@
 @media print {
 	html, body {
 		/* Reset the document's background color */
-		background-color: #fff;
+		background-color: #fff !important;
 	}
 	.page {
 		/* Reset all page styles that have been for better screen appearance only */
@@ -39,4 +39,30 @@
 	.showmore {
 		display: none;
 	}
+
+	.skillmatch ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		// overflow: hidden;
+	}
+	
+	li.skillmatch {
+		float: left;
+		display: block;
+		text-align: center;
+		padding: 0 5px 2px 5px;
+		margin: 0 5px 0px 5px;
+		text-decoration: none;
+		background-color: $brand !important;
+		box-shadow:  inset 0 0 0 1000px $brand !important;
+		color: white !important;
+	}
 }
+@media print and (color) {
+	* {
+		@include prefix((
+			print-color-adjust: exact
+		), webkit moz ms o);
+	}
+ }
