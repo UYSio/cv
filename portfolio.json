@@ -87,6 +87,28 @@
     ],
     "roles": [
         {
+            "title": "developer",
+            "company": "The App Business (for DunnHumby)",
+            "url": "https://www.theappbusiness.com/",
+            "type": "contract",
+            "duties": [
+                "Development of backend for a receipt parsing app called HuYu",
+                "OCR and parsers for 9 distinct retailers",
+                "Responsible for customer-retention features such as timeline, refer-a-friend",
+                "Integration with SurveyMonkey",
+                "Tight client liaison on continually improving the data and the parsers"
+            ],
+            "start": "2018-04",
+            "end": "2018-12",
+            "tech": {
+                "programming": ["python", "javascript"],
+                "framework": [],
+                "database": ["firebase real-time db", "bigquery"],
+                "other": ["gcloud", "firebase", "google vision", "cloud functions", "linux", "shell-scripting", "git"]
+            },
+            "current": true
+        },
+        {
             "title": "founder",
             "company": "pdfcrunch",
             "url": "https://pdfcrun.ch/",
@@ -127,7 +149,7 @@
                 "database": ["oracle"],
                 "other": ["soap-xml", "jboss", "jenkins", "svn"]
             },
-            "current": true
+            "current": false
         },
         {
             "title": "consultant",

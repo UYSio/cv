@@ -25,7 +25,7 @@ div.page-break {
 	page-break-after: always;
 }
 /* For top-level headings only */
-h1:not(1) {
+h1:not(:first) {
 	/* Force page breaks after */
 	page-break-before: always;
 }

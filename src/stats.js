@@ -1,5 +1,5 @@
 (function () {
-    
+
     // http://ejohn.org/blog/partial-functions-in-javascript/
     Function.prototype.curry = function () {
         var fn = this, args = Array.prototype.slice.call(arguments);
@@ -25,7 +25,7 @@
                 end = moment().format('YYYY-MM-DD');
             }
             var range = moment().range(start, end);
-            
+
             return _.reduce(role.tech[category], function (_aggr, tech) {
                 if (!_aggr[tech]) {
                     _aggr[tech] = [range];
@@ -39,7 +39,7 @@
 
         // order ranges by start date
         var scoreD3 = _.transform(ranges, function (result, ranges, key) {
-            
+
             var sum = 0;
 
             if (ranges.length == 1) {
@@ -73,11 +73,11 @@
                 //     console.log(key, sortedRanges);
                 //     console.log(key, combinedRanges);
                 // }
-                
+
                 var sum = _.reduce(combinedRanges, function (a, r) {
                     var months = r.diff('months');
                     return a + months;
-                }, 0); 
+                }, 0);
             }
 
             // scala is an anomaly - my tenure at NAP was quite long,
