@@ -11,11 +11,12 @@
         }
     },
     "personal": {
-        "statement": "I’m a full-stack web developer from London with over 15 years experience in industries ranging from government, e-commerce, and banking. I’m a pragmatist, automate once I need to do something the second time around, and enjoy the odd hackathon to flex my MVP muscle.",
+        "statement": "I’m a full-stack web developer from London with over 16 years experience in industries ranging from government, e-commerce, and fintech.",
         "interests": [
-            "hackathon junkie",
-            "makes little games in spare time",
-            "plays guitar and online chess"
+            "creative writing",
+            "illustration",
+            "game dev",
+            "guitar"
         ],
         "skills": [
             "Team leadership",
@@ -88,6 +89,25 @@
     "roles": [
         {
             "title": "developer",
+            "company": "MyMuse",
+            "url": "https://mymuse.uk/",
+            "type": "contract",
+            "duties": [
+                "Development and architecture of mobile backend using Firebase",
+                "Integration with various SaaS including Codat, NorthRow, CompaniesHouse, Insightly",
+                "Development of a separate invoice factoring system on GAE using Cloud Endpoints"
+            ],
+            "start": "2019-01",
+            "tech": {
+                "programming": ["javascript", "typescript"],
+                "framework": ["express"],
+                "database": ["firestore", "bigquery", "postgres"],
+                "other": ["gcloud", "firebase", "cloud functions", "linux", "shell-scripting", "git"]
+            },
+            "current": true
+        },
+        {
+            "title": "developer",
             "company": "The App Business (for DunnHumby)",
             "url": "https://www.theappbusiness.com/",
             "type": "contract",
@@ -106,7 +126,7 @@
                 "database": ["firebase real-time db", "bigquery"],
                 "other": ["gcloud", "firebase", "google vision", "cloud functions", "linux", "shell-scripting", "git"]
             },
-            "current": true
+            "current": false
         },
         {
             "title": "founder",
@@ -122,13 +142,14 @@
                 "Growth and customer acquisition"
             ],
             "start": "2013-11",
+            "end": "2018-06",
             "tech": {
                 "programming": ["python", "javascript", "html", "css", "clojure", "java", "scala"],
                 "framework": ["angularjs", "flask", "keras", "scrapy", "scipy", "numpy"],
                 "database": ["postgresql"],
                 "other": ["nginx", "rest-api", "gcloud", "linux", "shell-scripting", "git", "docker", "kubernetes"]
             },
-            "current": true
+            "current": false
         },
         {
             "title": "consultant",

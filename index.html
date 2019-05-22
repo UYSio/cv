@@ -32,7 +32,7 @@
     <div class="section">
       <h3>
         <i class="icon" style="background-image: url('{{$ctrl.images.icons.software}}');"></i>
-        Toolkit 
+        Toolkit
       </h3>
 
       <h4>
@@ -41,7 +41,7 @@
       </h4>
       <a ng-if="$ctrl.show.programming.n < $ctrl.show.programming.max" class="showmore" href="" ng-click="$ctrl.showMore('programming', 3)">Show 3 more...</a>
       <viz show="$ctrl.show.programming.n" category="programming"></viz>
-      
+
       <h4>
         Framework
         <span ng-if="$ctrl.show.framework.n < $ctrl.show.framework.max">(top {{$ctrl.show.framework.n}})</span>
@@ -80,14 +80,14 @@
 
           <dt>Email</dt>
           <dd>{{$ctrl.portfolio.contact.email}}</dd>
-        
+
           <dt>Github</dt>
           <dd><a href="{{$ctrl.portfolio.contact.web.github}}">{{$ctrl.portfolio.contact.web.github}}</a></dd>
-        
+
           <dt>Portfolio</dt>
           <dd><a href="{{$ctrl.portfolio.contact.web.portfolio}}">{{$ctrl.portfolio.contact.web.portfolio}}</a></dd>
         </dl>
-        
+
       </div>
 
       <div class="skills">
@@ -116,7 +116,7 @@
           <small>
           at
           </small>
-          {{role.company}}
+          <a ng-href="{{role.url}}">{{role.company}}</a>
 
           <small>
           ({{role.start}}<ng-show="!!role.end"> - {{role.end}}</ng-show><ng-show ng-show="!role.end"> now</ng-show>)
@@ -164,15 +164,13 @@
     </div>
 
     <div class="end section">
-      <small>Thanks for taking a look!</small>
-      <hr>
-      <p>This CV is data-driven and the source code is at <a href="https://github.com/uysio/cv">https://github.com/uysio/cv</a></p>
+      <p><a href="https://github.com/uysio/cv">https://github.com/uysio/cv</a></p>
     </div>
 
   </script>
 
   <script type="text/ng-template" id="404.html">
-    
+
     <p class="intro">Seek, and you shan't find.</p>
 
     <async-img
