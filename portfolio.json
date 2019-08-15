@@ -95,11 +95,12 @@
             "duties": [
                 "Development and architecture of mobile backend using Firebase",
                 "Integration with various SaaS including Codat, NorthRow, CompaniesHouse, Insightly",
-                "Development of a separate invoice factoring system on GAE using Cloud Endpoints"
+                "Development of a separate invoice factoring system on GAE using Cloud Endpoints",
+                "Translation of mathematical models into Python code"
             ],
             "start": "2019-01",
             "tech": {
-                "programming": ["javascript", "typescript"],
+                "programming": ["javascript", "typescript", "python"],
                 "framework": ["express"],
                 "database": ["firestore", "bigquery", "postgres"],
                 "other": ["gcloud", "firebase", "cloud functions", "linux", "shell-scripting", "git"]
