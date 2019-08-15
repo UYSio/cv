@@ -1,6 +1,6 @@
 (function () {
 
-    
+
     function render(num, attrs, element, d3, svg, _data, $timeout, renderTimeout, moment) {
         if (!_data) return;
         if (renderTimeout) clearTimeout(renderTimeout);
@@ -96,11 +96,13 @@
                 .duration(1000)
                 .attr('x', function (d,i) {
                     if (d.score > 24) {
-                        return xScale(d.score) + OFFSET - 50;
+                        // FIXME print cuts off years
+                        // return xScale(d.score) + OFFSET - 50;
+                        return OFFSET + 20;
                     } else {
                         return xScale(d.score) + OFFSET + 20;
                     }
-                    
+
                 })
                 .text(years);
 
