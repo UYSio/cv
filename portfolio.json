@@ -99,6 +99,7 @@
                 "Translation of mathematical models into Python code"
             ],
             "start": "2019-01",
+            "end": "2019-07",
             "tech": {
                 "programming": ["javascript", "typescript", "python"],
                 "framework": ["express"],
@@ -143,7 +144,6 @@
                 "Growth and customer acquisition"
             ],
             "start": "2013-11",
-            "end": "2018-06",
             "tech": {
                 "programming": ["python", "javascript", "html", "css", "clojure", "java", "scala"],
                 "framework": ["angularjs", "flask", "keras", "scrapy", "scipy", "numpy"],
