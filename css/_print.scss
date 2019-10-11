@@ -15,9 +15,16 @@
 		border-radius: initial !important;
 		background: initial !important;
 		box-shadow: initial !important;
+		color: $textcolour !important;
 
 		/* Force page breaks after each .page element of the document */
 		page-break-after: always;
+	}
+	* > li {
+		color: $textcolour !important;
+	}
+	* > p {
+		color: $textcolour !important;
 	}
 	.section {
 		// padding-top: $spacing / 3;
@@ -40,16 +47,36 @@
 		display: none;
 	}
 
-	.skillmatch ul {
-		list-style-type: none;
+	ul.skillmatch {
+		// list-style-type: none;
 		margin: 0;
 		padding: 0;
 		// overflow: hidden;
 	}
-	
+
+	ul.skillmatch > li {
+		font-size: smaller;
+	}
+
+	ul.duties {
+		// list-style: disc !important;
+		// list-style-type: disc !important;
+		margin-top: -20px;
+		// display: list-item !important;
+	}
+
+	// ul.duties > li {
+	// 	display: list-item !important;
+	// 	list-style: disc !important;
+	// 	// list-style-type: disc !important;
+	// }
+	ul.duties >li::before {
+		content: "• ";
+	}
+
 	li.skillmatch {
-		float: left;
-		display: block;
+		// float: left;
+		// display: block;
 		text-align: center;
 		padding: 0 5px 2px 5px;
 		margin: 0 5px 0px 5px;

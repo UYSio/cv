@@ -1,17 +1,21 @@
 {
     "contact": {
-        "name": "Juan M Uys",
-        "role": "coder creative",
-        "phone": "07702783956",
+        "name": "Juan Uys",
+        "role": "web developer",
+        "phone": "07702 783 956",
         "email": "juan+cv@uys.io",
-        "address": "London N21, United Kingdom",
+        "address": "London N21, UK",
         "web": {
             "github": "https://github.com/opyate",
             "portfolio": "https://uys.io/portfolio/"
         }
     },
     "personal": {
-        "statement": "I’m a full-stack web developer from London with over 16 years experience in industries ranging from government, e-commerce, and fintech.",
+        "statement": [
+            "I’m a full-stack web developer from London with over 16 years experience in industries ranging from government, e-commerce, and fintech.",
+            "My pragmatic approach ensures that the essential work gets done.",
+            "I've architected systems and led teams, and I'm a big believer in automation and testing, whether it is assumptions or code."
+        ],
         "interests": [
             "creative writing",
             "illustration",
@@ -88,6 +92,28 @@
     ],
     "roles": [
         {
+            "title": "founder",
+            "company": "pdfcrunch",
+            "url": "https://pdfcrun.ch/",
+            "type": "startup",
+            "duties": [
+                "Development and operating (devops) of all services",
+                "Deep learning approach for V2 of the core algorithm",
+                "PDF training dataset (80K+ PDFs) obtained with crawler",
+                "Analysis and development using scipy, numpy and Keras",
+                "Beta tester liaison",
+                "Growth and customer acquisition"
+            ],
+            "start": "2013-11",
+            "tech": {
+                "programming": ["python", "javascript", "clojure"],
+                "framework": ["angularjs", "flask", "keras", "scrapy", "scipy", "numpy"],
+                "database": ["postgresql"],
+                "other": ["nginx", "rest-api", "gcloud", "linux", "shell-scripting", "git", "docker", "kubernetes", "html", "css"]
+            },
+            "current": false
+        },
+        {
             "title": "lead developer",
             "company": "MyMuse",
             "url": "https://mymuse.uk/",
@@ -101,7 +127,7 @@
             "start": "2019-01",
             "end": "2019-07",
             "tech": {
-                "programming": ["javascript", "typescript", "python"],
+                "programming": ["python", "typescript", "javascript"],
                 "framework": ["express"],
                 "database": ["firestore", "bigquery", "postgres"],
                 "other": ["gcloud", "firebase", "cloud functions", "linux", "shell-scripting", "git"]
@@ -127,28 +153,6 @@
                 "framework": [],
                 "database": ["firebase real-time db", "bigquery"],
                 "other": ["gcloud", "firebase", "google vision", "cloud functions", "linux", "shell-scripting", "git"]
-            },
-            "current": false
-        },
-        {
-            "title": "founder",
-            "company": "pdfcrunch",
-            "url": "https://pdfcrun.ch/",
-            "type": "startup",
-            "duties": [
-                "Development and operating (devops) of all services",
-                "Deep learning approach for V2 of the core algorithm",
-                "PDF training dataset (80K+ PDFs) obtained with crawler",
-                "Analysis and development using scipy, numpy and Keras",
-                "Beta tester liaison",
-                "Growth and customer acquisition"
-            ],
-            "start": "2013-11",
-            "tech": {
-                "programming": ["python", "javascript", "html", "css", "clojure", "java", "scala"],
-                "framework": ["angularjs", "flask", "keras", "scrapy", "scipy", "numpy"],
-                "database": ["postgresql"],
-                "other": ["nginx", "rest-api", "gcloud", "linux", "shell-scripting", "git", "docker", "kubernetes"]
             },
             "current": false
         },
@@ -191,10 +195,10 @@
             "start": "2017-09",
             "end": "2017-12",
             "tech": {
-                "programming": ["java", "javascript", "html", "css", "groovy"],
+                "programming": ["java", "javascript", "groovy"],
                 "framework": ["dropwizard", "react", "nodejs", "selenium"],
                 "database": ["mongodb"],
-                "other": ["nginx", "kong", "jenkins", "git", "rest-api", "shell-scripting"]
+                "other": ["nginx", "kong", "jenkins", "git", "rest-api", "shell-scripting", "html", "css"]
             },
             "current": false
         },
@@ -236,10 +240,10 @@
             "start": "2016-05",
             "end": "2017-02",
             "tech": {
-                "programming": ["javascript", "typescript", "html", "css"],
+                "programming": ["javascript", "typescript"],
                 "framework": ["nodejs", "angularjs", "express", "angular2", "d3.js"],
                 "database": ["mongodb"],
-                "other": ["circleci", "docker", "aws", "git", "rest-api"]
+                "other": ["circleci", "docker", "aws", "git", "rest-api", "html", "css"]
             },
             "current": false
         },
@@ -266,11 +270,11 @@
             "start": "2015-07",
             "end": "2016-03",
             "tech": {
-                "programming": ["javascript", "lua", "ruby", "php", "html", "css", "python"],
+                "programming": ["javascript", "lua", "ruby", "php", "python"],
                 "framework": ["nodejs", "hapijs", "magento", "hybris", "react", "cucumber"],
                 "database": ["mysql"],
                 "other": ["nginx", "swagger", "kong", "kubernetes", "shell-scripting", "git",
-                    "rest-api", "docker", "aws", "mirakl", "linux"]
+                    "rest-api", "docker", "aws", "mirakl", "linux", "html", "css"]
             },
             "current": false
         },
@@ -350,10 +354,10 @@
             "start": "2013-08",
             "end": "2014-03",
             "tech": {
-                "programming": ["scala", "javscript", "html", "css"],
+                "programming": ["scala", "javscript"],
                 "framework": ["lift", "akka", "angularjs"],
                 "database": ["postgresql"],
-                "other": ["nginx", "shell-scripting", "aws", "git", "rest-api"]
+                "other": ["nginx", "shell-scripting", "aws", "git", "rest-api", "html", "css"]
             },
             "current": false
         },
@@ -421,10 +425,10 @@
             "start": "2005-12",
             "end": "2006-07",
             "tech": {
-                "programming": ["java", "ruby", "javascript", "html", "css"],
+                "programming": ["java", "ruby", "javascript"],
                 "framework": ["rails", "ajax"],
                 "database": ["mysql"],
-                "other": ["linux", "shell-scripting", "cvs"]
+                "other": ["linux", "shell-scripting", "cvs", "html", "css"]
             },
             "current": false
         },
@@ -440,10 +444,10 @@
             "start": "2005-10",
             "end": "2005-12",
             "tech": {
-                "programming": ["php", "javascript", "html", "css", "perl"],
+                "programming": ["php", "javascript", "perl"],
                 "framework": [],
                 "database": ["mysql"],
-                "other": ["apache", "linux", "shell-scripting", "cvs"]
+                "other": ["apache", "linux", "shell-scripting", "cvs", "html", "css"]
             },
             "current": false
         },
@@ -459,10 +463,10 @@
             "start": "2004-05",
             "end": "2005-11",
             "tech": {
-                "programming": ["c#", "javascript", "html", "css"],
+                "programming": ["c#", "javascript"],
                 "framework": [".net"],
                 "database": ["sql-server"],
-                "other": ["iss", "linux", "shell-scripting", "visual-source-safe"]
+                "other": ["iss", "linux", "shell-scripting", "visual-source-safe", "html", "css"]
             },
             "current": false
         },
@@ -505,11 +509,11 @@
             "start": "2002-05",
             "end": "2003-09",
             "tech": {
-                "programming": ["java", "javascript", "html", "css", "xslt", "vbscript", "perl", "wap", "j2me"],
+                "programming": ["java", "javascript", "xslt", "vbscript", "perl", "wap", "j2me"],
                 "framework": ["servlet", "jsp"],
                 "database": ["postgresql"],
                 "other": ["apache", "linux", "shell-scripting", "tomcat", "apache", "netbeans",
-                    "flash", "macromedia", "photoshop", "webmin", "sendmail"]
+                    "flash", "macromedia", "photoshop", "webmin", "sendmail", "html", "css"]
             },
             "current": false
         }

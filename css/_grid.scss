@@ -1,14 +1,14 @@
-.personal_and_skills {
+.techleft_and_techright {
     display: grid;
-    grid-template: "personal skills"
+    grid-template: "techleft techright"
 }
 
-.personal {
-    grid-area: personal;
+.techleft {
+    grid-area: techleft;
 }
 
-.skills {
-    grid-area: skills;
+.techright {
+    grid-area: techright;
 }
 
 .education_and_interests {
@@ -25,8 +25,8 @@
 }
 
 @media (max-width: 800px) {
-    .personal_and_skills {
-        grid-template: "personal" "skills"
+    .techleft_and_techright {
+        grid-template: "techleft" "techright"
     }
     .education_and_interests {
         grid-template: "education" "interests"

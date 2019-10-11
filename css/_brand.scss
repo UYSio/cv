@@ -28,6 +28,10 @@
     text-decoration: $brand underline solid;
     clear: both;
 }
+span.showmore {
+    color: $textcolour;
+    text-decoration: none;
+}
 
 .skillmatch ul {
     list-style-type: none;
@@ -45,4 +49,8 @@
     text-decoration: none;
     background-color: $brand;
     color: white !important;
+}
+span.smaller {
+    font-size: smaller;
+    color: $textcolourll;
 }
