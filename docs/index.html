@@ -16,41 +16,6 @@
       <p>{{$ctrl.portfolio.personal.statement.join(' ')}}</p>
     </div>
 
-    <div class="techleft_and_techright section">
-
-      <div class="techleft">
-        <h4>
-          Programming
-          <span ng-if="$ctrl.show.programming.n < $ctrl.show.programming.max">(top {{$ctrl.show.programming.n}})</span>
-        </h4>
-        <viz show="$ctrl.show.programming.n" category="programming"></viz>
-        <a ng-if="$ctrl.show.programming.n < $ctrl.show.programming.max" class="showmore" href="" ng-click="$ctrl.showMore('programming', 3)">Show more...</a>
-
-        <h4>
-          Framework
-          <span ng-if="$ctrl.show.framework.n < $ctrl.show.framework.max">(top {{$ctrl.show.framework.n}})</span>
-        </h4>
-        <viz show="$ctrl.show.framework.n" category="framework"></viz>
-        <a ng-if="$ctrl.show.framework.n < $ctrl.show.framework.max" class="showmore" href="" ng-click="$ctrl.showMore('framework', 3)">Show more...</a>
-      </div>
-
-      <div class="techright">
-        <h4>
-          Database
-          <span ng-if="$ctrl.show.database.n < $ctrl.show.database.max">(top {{$ctrl.show.database.n}})</span>
-        </h4>
-        <viz show="$ctrl.show.database.n" category="database"></viz>
-        <a ng-if="$ctrl.show.database.n < $ctrl.show.database.max" class="showmore" href="" ng-click="$ctrl.showMore('database', 3)">Show more...</a>
-
-        <h4>
-          Other
-          <span ng-if="$ctrl.show.other.n < $ctrl.show.other.max">(top {{$ctrl.show.other.n}})</span>
-        </h4>
-        <viz show="$ctrl.show.other.n" category="other"></viz>
-        <a ng-if="$ctrl.show.other.n < $ctrl.show.other.max" class="showmore" href="" ng-click="$ctrl.showMore('other', 3)">Show more...</a>
-      </div>
-    </div> -->
-
     <div class="experience section">
 
       <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.show.experience.n">
