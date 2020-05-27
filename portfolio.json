@@ -100,14 +100,16 @@
                 "Expanding the platform for international expansion to France, Spain, Texas",
                 "Meter lookup aided by disparate, messy data sources from these territories",
                 "Support more industry data flows",
-                "Billing dependency enhancements"
+                "Billing dependency enhancements",
+                "Analysis of address data to aid in design of most efficient lookup services",
+                "Extra customer onboarding channels (batch upload for price comparison websites)"
             ],
             "start": "2019-10",
             "tech": {
-                "programming": ["python"],
+                "programming": ["python", "jupyter"],
                 "framework": ["flask", "react"],
                 "database": ["postgresql", "bigquery"],
-                "other": ["rest-api", "gcloud", "linux", "shell-scripting", "git", "docker", "kubernetes", "html", "css"]
+                "other": ["pandas", "rest-api", "gcloud", "linux", "shell-scripting", "git", "docker", "kubernetes", "html", "css"]
             },
             "current": false
         },
