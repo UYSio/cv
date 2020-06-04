@@ -36,29 +36,34 @@
             "course": "deeplearning.ai",
             "level": "specialisation",
             "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/WUMC3L2MXQ7F",
-            "year": 2018
+            "year": 2018,
+            "month": 7
         },
         {
             "institution": "Georgia Institute of Technology",
             "course": "Computational Investing",
             "level": "certificate",
             "url": "https://www.coursera.org/account/accomplishments/records/3QXU2KYMLG",
-            "year": 2013
+            "year": 2013,
+            "month": 11
         },
         {
             "institution": "Coursera",
             "course": "Data Analysis",
-            "year": 2013
+            "year": 2013,
+            "month": 3
         },
         {
             "institution": "Coursera",
             "course": "Web Intelligence and Big Data",
-            "year": 2013
+            "year": 2013,
+            "month": 6
         },
         {
             "institution": "Coursera",
             "course": "Functional Programming Principles in Scala",
-            "year": 2012
+            "year": 2012,
+            "month": 11
         },
         {
             "institution": "Udacity",
@@ -420,7 +425,8 @@
                 "Hackday champion 2011, showcasing a mobile app for the budding fashion scout",
                 "Implemented a CMS and workflow system with the team",
                 "Solely implemented the translation service integrating with 3rd party translators and CMS system",
-                "Implemented search and sitemap automation",
+                "Implemented search using ElasticSearch",
+                "Implemented sitemap automation using Apache Nutch",
                 "Built automation glue for our CI/CD system"
             ],
             "start": "2007-01",
@@ -429,8 +435,8 @@
                 "programming": ["java", "scala", "javascript"],
                 "framework": ["spring"],
                 "database": ["mysql"],
-                "other": ["apache", "linux", "shell-scripting", "soap-xml", "lucene", "solr",
-                    "elasticsearch", "jenkins", "svn", "git", "rest-api", "spring-batch",
+                "other": ["elasticsearch", "apache", "linux", "shell-scripting", "soap-xml", "lucene", "solr",
+                    "jenkins", "svn", "git", "rest-api", "spring-batch",
                     "apache-nutch", "alfresco", "activiti", "bouncycastle", "hibernate"]
             },
             "current": false
