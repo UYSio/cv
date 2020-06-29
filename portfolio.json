@@ -130,13 +130,14 @@
                 "PDF training dataset (80K+ PDFs) obtained with crawler",
                 "Analysis and development using scipy, numpy and Keras",
                 "Beta tester liaison",
-                "Growth and customer acquisition"
+                "Growth and customer acquisition",
+                "Django-based admin console (later rewritten as Angular-based SPA to utilise API directly)"
             ],
             "start": "2013-11",
             "end": "2019-06",
             "tech": {
                 "programming": ["python", "javascript", "clojure"],
-                "framework": ["angularjs", "flask", "keras", "scrapy", "scipy", "numpy"],
+                "framework": ["angularjs", "flask", "keras", "scrapy", "scipy", "numpy", "django"],
                 "database": ["postgresql"],
                 "other": ["nginx", "rest-api", "gcloud", "linux", "shell-scripting", "git", "docker", "kubernetes", "html", "css"]
             },
@@ -383,7 +384,7 @@
             "start": "2013-08",
             "end": "2014-03",
             "tech": {
-                "programming": ["scala", "javscript"],
+                "programming": ["scala", "javascript"],
                 "framework": ["lift", "akka", "angularjs"],
                 "database": ["postgresql"],
                 "other": ["nginx", "shell-scripting", "aws", "git", "rest-api", "html", "css"]
