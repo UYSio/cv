@@ -179,7 +179,7 @@
             "start": "2018-04",
             "end": "2018-12",
             "tech": {
-                "programming": ["python", "javascript"],
+                "programming": ["javascript", "python"],
                 "framework": [],
                 "database": ["firebase real-time db", "bigquery"],
                 "other": ["gcloud", "firebase", "google vision", "cloud functions", "linux", "shell-scripting", "git"]
