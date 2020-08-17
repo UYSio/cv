@@ -43,6 +43,12 @@ app.filter('abs', function() {
     return function(num) { return Math.abs(num); }
 });
 
+app.filter('list', function() {
+    return function(val) {
+        return val.slice(0, val.length - 1).join(', ') + ' and ' + val[val.length - 1];
+    }
+});
+
 require('./src/routes.js');
 require('./src/home.js');
 require('./src/404.js');

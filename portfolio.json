@@ -12,22 +12,24 @@
     },
     "personal": {
         "statement": [
-            "I’m a full-stack web developer from London with over 17 years experience in industries ranging from government, e-commerce, and fintech.",
+            "I’m a full-stack web developer from London with over 18 years experience in industries ranging from government, e-commerce, energy, and fintech.",
             "My pragmatic approach ensures that the essential work gets done.",
-            "I've architected systems and led teams, and I'm a big believer in automation and testing, whether it is assumptions or code."
+            "I've architected systems and led teams, also providing mentorship where needed.",
+            "I deliver fully-tested code and automate where necessary.",
+            "My work is well-documented, and I record screencasts of features I've delivered, or internal talks I'm giving."
         ],
         "interests": [
+            "game dev & design",
             "creative writing",
             "illustration",
-            "game dev",
-            "guitar"
+            "playing guitar"
         ],
         "skills": [
-            "Team leadership",
-            "Pragmatism",
-            "Essentialism",
-            "Automation",
-            "Architecture"
+            "team leadership",
+            "pragmatism",
+            "essentialism",
+            "automation",
+            "architecture"
         ]
     },
     "education": [
@@ -98,6 +100,27 @@
     "roles": [
         {
             "title": "developer",
+            "company": "Sponge",
+            "url": "https://wearesponge.com/",
+            "type": "contract",
+            "duties": [
+                "Shipping integration using DPD",
+                "Payment integration with Stripe",
+                "e-commerce garment custimisation with Vue.js",
+                "Introducing a test suite as there was none",
+                "Various modernisation initiatives"
+            ],
+            "start": "2020-07",
+            "tech": {
+                "programming": ["python", "typescript", "javascript"],
+                "framework": ["django", "vue"],
+                "database": ["postgresql"],
+                "other": ["rest-api", "linux", "shell-scripting", "git", "docker", "html", "css", "sass"]
+            },
+            "current": true
+        },
+        {
+            "title": "developer",
             "company": "Bulb Energy",
             "url": "https://bulb.co.uk/",
             "type": "contract",
@@ -131,7 +154,8 @@
                 "Analysis and development using scipy, numpy and Keras",
                 "Beta tester liaison",
                 "Growth and customer acquisition",
-                "Django-based admin console (later rewritten as Angular-based SPA to utilise API directly)"
+                "Django-based admin console (later rewritten as Angular-based SPA to utilise API directly)",
+                "Python 2 to 3 migration of entire code base"
             ],
             "start": "2013-11",
             "end": "2019-06",
@@ -152,7 +176,8 @@
                 "Development and architecture of mobile backend using Firebase",
                 "Integration with various SaaS including Codat, NorthRow, CompaniesHouse, Insightly",
                 "Development of a separate invoice factoring system on GAE using Cloud Endpoints",
-                "Translation of mathematical models into Python code"
+                "Translation of mathematical models into Python code",
+                "Mentorship and setting of technical direction of the stack"
             ],
             "start": "2019-01",
             "end": "2019-07",
@@ -174,7 +199,8 @@
                 "OCR and parsers for 9 distinct retailers",
                 "Responsible for customer-retention features such as timeline, refer-a-friend",
                 "Integration with SurveyMonkey",
-                "Tight client liaison on continually improving the data and the parsers"
+                "Tight client liaison on continually improving the data and the parsers",
+                "Bringing new developers on board and facilitating code hand-over"
             ],
             "start": "2018-04",
             "end": "2018-12",
@@ -283,7 +309,7 @@
             "url": "https://www.condenast.co.uk/",
             "type": "contract",
             "duties": [
-                "Team lead for Platform Team of six",
+                "Team lead and mentor for Platform Team of six",
                 "Defining and helping team define OKRs",
                 "Reporting to CTO",
                 "Responsible for code-that-writes-code approach to building out our API proxy based on HapiJS",
@@ -292,7 +318,7 @@
                 "Facilitating integrations with SAP Hybris, Mirakl, Vertex, and other e-commerce SaaS",
                 "Introducing team to Mashape's Kong to replace our custom proxy",
                 "Contributed 'correlation ID' plugin to Kong",
-                "Responsible for interviewing",
+                "Responsible for tech interviewing",
                 "Devised a remote interviewing and pair programming system",
                 "Instilled a respect for good metrics in the team",
                 "Responsible for API developer portal, built with React"

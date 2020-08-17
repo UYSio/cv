@@ -36,6 +36,7 @@
       </h4>
 
       <p>{{$ctrl.portfolio.personal.statement.join(' ')}}</p>
+      <p>My skills are {{$ctrl.portfolio.personal.skills | list}}, and my interests are {{$ctrl.portfolio.personal.interests | list}}.</p>
     </div>
 
     <div class="experience section">
@@ -66,7 +67,7 @@
       </div>
 
       <a ng-if="$ctrl.show.experience.n < $ctrl.show.experience.max" class="showmore" href="" ng-click="$ctrl.showMore('experience', 2)">Show 2 more</a>
-      <span class="showmore"> &mdash; </span>
+      <span ng-if="$ctrl.show.experience.n < $ctrl.show.experience.max" class="showmore"> &mdash; </span>
       <a ng-if="$ctrl.show.experience.n < $ctrl.show.experience.max" class="showmore" href="" ng-click="$ctrl.showMore('experience', 999)">Show all</a>
     </div>
 
