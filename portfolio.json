@@ -130,7 +130,8 @@
                 "Support more industry data flows",
                 "Billing dependency enhancements",
                 "Analysis of address data to aid in design of most efficient lookup services",
-                "Extra customer onboarding channels (batch upload for price comparison websites)"
+                "Extra customer onboarding channels (batch upload for price comparison websites)",
+                "Tailing off all events to BigQuery, and designing queries to answer questions about customer life-cycles"
             ],
             "start": "2019-10",
             "end": "2020-05",
@@ -177,7 +178,8 @@
                 "Integration with various SaaS including Codat, NorthRow, CompaniesHouse, Insightly",
                 "Development of a separate invoice factoring system on GAE using Cloud Endpoints",
                 "Translation of mathematical models into Python code",
-                "Mentorship and setting of technical direction of the stack"
+                "Mentorship and setting of technical direction of the stack",
+                "Continually ingesting all data to BigQuery for analysis"
             ],
             "start": "2019-01",
             "end": "2019-07",
@@ -200,7 +202,9 @@
                 "Responsible for customer-retention features such as timeline, refer-a-friend",
                 "Integration with SurveyMonkey",
                 "Tight client liaison on continually improving the data and the parsers",
-                "Bringing new developers on board and facilitating code hand-over"
+                "Closely working with data science team in refining requirements, building out the data pipeline, and optimising queries",
+                "Bringing new developers on board and facilitating code hand-over",
+                "Part of the internal machine learning COP"
             ],
             "start": "2018-04",
             "end": "2018-12",
