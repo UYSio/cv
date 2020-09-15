@@ -106,9 +106,7 @@
             "duties": [
                 "Shipping integration using DPD",
                 "Payment integration with Stripe",
-                "e-commerce garment customisation with Vue.js",
-                "Introducing a test suite as there was none",
-                "Various modernisation initiatives"
+                "e-commerce garment customisation with Vue.js"
             ],
             "start": "2020-07",
             "tech": {
