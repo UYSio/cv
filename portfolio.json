@@ -98,6 +98,24 @@
         }
     ],
     "roles": [
+	{
+            "title": "developer",
+            "company": "Triller",
+            "url": "https://triller.co/",
+            "type": "contract",
+            "duties": [
+                "Moderation system"
+            ],
+            "start": "2020-09",
+            "tech": {
+                "programming": ["python"],
+                "framework": ["django"],
+                "database": ["postgresql", "dynamodb"],
+                "other": ["rest-api", "linux", "shell-scripting", "git", "docker"]
+            },
+            "current": true
+        },
+
         {
             "title": "developer",
             "company": "Sponge",
@@ -106,16 +124,18 @@
             "duties": [
                 "Shipping integration using DPD",
                 "Payment integration with Stripe",
-                "e-commerce garment customisation with Vue.js"
+                "e-commerce garment customisation with Vue.js",
+		"Introduced first set of unit tests"
             ],
             "start": "2020-07",
+            "end": "2020-09",
             "tech": {
                 "programming": ["python", "typescript", "javascript"],
                 "framework": ["django", "vue"],
                 "database": ["postgresql"],
                 "other": ["rest-api", "linux", "shell-scripting", "git", "docker", "html", "css", "sass"]
             },
-            "current": true
+            "current": false
         },
         {
             "title": "developer",
