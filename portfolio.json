@@ -98,7 +98,64 @@
         }
     ],
     "roles": [
-	{
+	    {
+            "title": "software engineer",
+            "company": "all health",
+            "url": "https://all.health/",
+            "type": "contract",
+            "duties": [
+                "Content verification"
+            ],
+            "start": "2022-07",
+            "tech": {
+                "programming": ["python"],
+                "framework": ["flask"],
+                "database": ["postgresql"],
+                "other": ["rest-api", "linux", "shell-scripting", "git", "docker"]
+            },
+            "current": true
+        },
+        {
+            "title": "software engineer",
+            "company": "Climate Policy Radar",
+            "url": "https://climatepolicyradar.org/",
+            "type": "contract",
+            "duties": [
+                "Open source climate policy database built from scratch, with FastAPI API.",
+                "Data import from disparate CSV sources using a custom ETL pipeline.",
+                "Built infrastructure on AWS using Pulumi. Streamlined developer process using Docker."
+            ],
+            "start": "2022-02",
+            "end": "2022-05",
+            "tech": {
+                "programming": ["python"],
+                "framework": ["fastapi", "react", "pulumi"],
+                "database": ["postgresql"],
+                "other": ["rest-api", "linux", "shell-scripting", "git", "docker"]
+            },
+            "current": false
+        },
+        {
+            "title": "developer + researcher",
+            "company": "Offworld Live",
+            "url": "https://offworld.live/",
+            "type": "permanent",
+            "duties": [
+                "R&D for VR video streaming and metadata encoding using Unreal Engine + Unity.",
+                "Python CI pipeline using custom Windows-based build server with Github Actions.",
+                "Payments, CRM, affiliates integration using Node, Typescript, React, all on AWS cloud."
+            ],
+            "start": "2021-05",
+            "end": "2022-01",
+            "tech": {
+                "programming": ["typescript", "python"],
+                "framework": ["react", "pulumi"],
+                "database": ["postgresql"],
+                "other": ["rest-api", "linux", "shell-scripting", "git", "docker"]
+            },
+            "current": false
+        },
+        {
             "title": "developer",
             "company": "Triller",
             "url": "https://triller.co/",
@@ -107,15 +164,15 @@
                 "Moderation system"
             ],
             "start": "2020-09",
+            "end": "2021-04",
             "tech": {
                 "programming": ["python"],
                 "framework": ["django"],
                 "database": ["postgresql", "dynamodb"],
                 "other": ["rest-api", "linux", "shell-scripting", "git", "docker"]
             },
-            "current": true
+            "current": false
         },
-
         {
             "title": "developer",
             "company": "Sponge",
