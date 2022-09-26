@@ -4,7 +4,7 @@
         "role": "web developer",
         "phone": "07702 783 956",
         "email": "juan+cv@uys.io",
-        "address": "London N21, UK",
+        "address": "Cheltenham, UK",
         "web": {
             "github": "https://github.com/opyate",
             "portfolio": "https://uys.io/portfolio/"
@@ -12,7 +12,7 @@
     },
     "personal": {
         "statement": [
-            "I’m a full-stack web developer from London with over 18 years experience in industries ranging from government, e-commerce, energy, and fintech.",
+            "I’m a full-stack web developer from London with over 20 years experience in industries ranging from government, e-commerce, energy, and fintech.",
             "My pragmatic approach ensures that the essential work gets done.",
             "I've architected systems and led teams, also providing mentorship where needed.",
             "I deliver fully-tested code and automate where necessary.",
@@ -20,12 +20,10 @@
         ],
         "interests": [
             "game dev & design",
-            "creative writing",
             "illustration",
             "playing guitar"
         ],
         "skills": [
-            "team leadership",
             "pragmatism",
             "essentialism",
             "automation",
