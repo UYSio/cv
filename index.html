@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <base href="/cv/">
   <!-- <base href="/"> -->
-  <title>Juan Uys &mdash; web developer</title>
+  <title>Juan Uys &mdash; Senior developer</title>
   <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 </head>
@@ -21,58 +21,69 @@
   <!-- ========= -->
 
   <script type="text/ng-template" id="home.html">
-
     <div class="header section">
       <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
-      <h1 class="name">{{$ctrl.portfolio.contact.name}}
-        <span class="smaller">{{$ctrl.portfolio.contact.role}}</span>
-      </h1>
-      <h4>
+      <h1 class="name">{{$ctrl.portfolio.contact.name}}</h1>
+      <h3 class="job_title">{{$ctrl.portfolio.contact.role}}</h3>
+      <!-- <p>
         <span class="smaller">phone:</span> {{$ctrl.portfolio.contact.phone}}
         <span class="smaller">location:</span> {{$ctrl.portfolio.contact.address}}
-      </h4>
-      <h4>
+      </p>
+      <p>
         <span class="smaller">email:</span> {{$ctrl.portfolio.contact.email}}
-      </h4>
+      </p> -->
+      
+      <p>
+        <ul class="inline-list">
+          <li ng-repeat="link in $ctrl.portfolio.contact.web" ng-show="link.show"><a ng-href="{{link.url}}">{{link.name}}</a></li>
+        </ul>
+      </p>
 
-      <p>{{$ctrl.portfolio.personal.statement.join(' ')}}</p>
+
+      <p>
+        I’m a full-stack developer from Cheltenham with over {{$ctrl.yearsExperience}} years experience in industries ranging from government, e-commerce, energy, and fintech.
+
+        {{$ctrl.portfolio.personal.statement.join(' ')}}</p>
       <p>My skills are {{$ctrl.portfolio.personal.skills | list}}, and my interests are {{$ctrl.portfolio.personal.interests | list}}.</p>
     </div>
 
+    <!-- <div class="toc section">
+      <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </div> -->
+
     <div class="experience section">
+      <h1 id="experience">Experience</h1>
 
       <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.show.experience.n">
-        <h4>
-          {{role.type}} {{role.title}}
-          <small>
-          at
-          </small>
-          <a ng-href="{{role.url}}">{{role.company}}</a>
-
-          <small>
-          ({{role.start}}<ng-show="!!role.end"> - {{role.end}}</ng-show><ng-show ng-show="!role.end"> now</ng-show>)
-          </small>
-        </h4>
-
-        <ul class="skillmatch">
-          <li ng-repeat="skill in role.tech.programming | limitTo:2">{{skill}}</li>
-          <li ng-repeat="skill in role.tech.framework | limitTo:2">{{skill}}</li>
-          <li ng-repeat="skill in role.tech.database | limitTo:2">{{skill}}</li>
-          <li ng-repeat="skill in role.tech.other | limitTo:2">{{skill}}</li>
-        </ul>
-        <br/>
+        <h2 class="company"><a ng-href="{{role.url}}">{{role.company}}</a></h2>
+        <p class="role">{{role.title}}</p>
+        <p class="timeline">{{role.start}}<ng-show="!!role.end"> to {{role.end}}</ng-show><ng-show ng-show="!role.end"> now</ng-show></p>
+        <p class="tagline">{{role.tagline}}</p>
         <ul class="duties">
           <li ng-repeat="duty in role.duties">{{duty}}</li>
         </ul>
+        <p class="tech">Tech used: {{ (role.tech.programming.concat(role.tech.framework, role.tech.database, role.tech.other)).join(', ') }}</p>
       </div>
 
+      <br/>
       <a ng-if="$ctrl.show.experience.n < $ctrl.show.experience.max" class="showmore" href="" ng-click="$ctrl.showMore('experience', 2)">Show 2 more</a>
       <span ng-if="$ctrl.show.experience.n < $ctrl.show.experience.max" class="showmore"> &mdash; </span>
       <a ng-if="$ctrl.show.experience.n < $ctrl.show.experience.max" class="showmore" href="" ng-click="$ctrl.showMore('experience', 999)">Show all</a>
     </div>
 
+    <div class="education section">
+      <h1 id="education">Education</h1>
+
+      <ul>
+        <li ng-repeat="edu in $ctrl.portfolio.education"><a ng-href="{{edu.url}}">{{edu.course}} ({{edu.institution}}, {{edu.year}})</a></li>
+      </ul>
+    </div>
+
     <div class="end section">
-      <p><a href="https://github.com/uysio/cv">https://github.com/uysio/cv</a></p>
+      <p><a href="https://github.com/uysio/cv">&lt;this is a data-driven cv/&gt;</a></p>
     </div>
 
   </script>

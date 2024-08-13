@@ -45,14 +45,89 @@ p + p {
 	/* Restore the spacing between the paragraphs */
 	margin-top: 0.5cm;
 }
-/* For links in the document */
-a {
-	/* Prevent colorization or decoration */
-	text-decoration: none;
-	color: $textcolour;
-}
+
 /* For tables in the document */
 table {
 	/* Avoid page breaks inside */
 	page-break-inside: avoid;
+}
+
+
+/* emoji icons */
+p.role {
+    font-weight: 600;
+}
+p.role::before {
+    content: "👷‍♂️ ";
+}
+
+p.timeline::before {
+    content: "🗓️ ";
+
+}
+
+p.tagline::before {
+    content: "📌 ";
+}
+
+p.tech::before {
+    content: "🔧 ";
+}
+
+/* inline list */
+$inline_list_spacing: 10px;
+
+ul.inline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+	margin-top: -10px;
+}
+
+ul.inline-list li {
+    margin-left: $inline_list_spacing;
+}
+
+ul.inline-list li:first-child {
+    margin-left: 0;
+}
+
+ul.inline-list li::before {
+    content: "|";
+    margin-right: $inline_list_spacing;
+}
+
+ul.inline-list li.ng-hide::before {
+    content: "";
+}
+
+ul.inline-list li:first-child::before {
+    content: "";
+    margin-right: 0;
+}
+
+/* Additional rule to handle visible elements */
+ul.inline-list li:not(.ng-hide):first-of-type::before {
+    content: "";
+    margin-right: 0;
+}
+
+/* un-link the header hrefs */
+h2 > a {
+	text-decoration: none;
+	color: $textcolour;
+}
+
+h2.company {
+	background-color: lighten($accent, 25%);
+}
+
+.header.section {
+	background-color: lighten($brand, 25%);
+}
+
+.education.section {
+	background-color: lighten($brand, 25%);
 }

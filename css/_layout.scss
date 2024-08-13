@@ -1,6 +1,6 @@
 .section {
-    padding-top: $spacing / 3;
-    padding-bottom: $spacing / 3;
+    padding-top: calc($spacing / 3);
+    padding-bottom: calc($spacing / 3);
     padding-left: $spacing;
     padding-right: $spacing;
 }

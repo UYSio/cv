@@ -3,8 +3,8 @@ img.profile {
     box-shadow: $card;
     border-radius: 50%;
     float: left;
-    margin: $spacing / 3;
-    margin-right: $spacing / 2;
+    margin: calc($spacing / 3);
+    margin-right: calc($spacing / 2);
 }
 
 h4.role {

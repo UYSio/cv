@@ -60,6 +60,17 @@
       // console.log('total now', total);
       ctrl.show[what].n = total;
     };
+
+    function yearsExp(portfolio) {
+      var now = new Date();
+      var earliestStartYear = _.min(_.map(portfolio.roles, function (role) {
+        var year = role.start.split('-')[0];
+        return new Date(year).getFullYear();
+      }));
+      return now.getFullYear() - earliestStartYear;
+    }
+
+    ctrl.yearsExperience = yearsExp(portfolio) - 1; 
   }
 
   angular.module('app').component('home', {

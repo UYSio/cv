@@ -61,7 +61,7 @@
 	ul.duties {
 		// list-style: disc !important;
 		// list-style-type: disc !important;
-		margin-top: -20px;
+		// margin-top: -20px;
 		// display: list-item !important;
 	}
 
@@ -84,6 +84,29 @@
 		background-color: $brand !important;
 		box-shadow:  inset 0 0 0 1000px $brand !important;
 		color: white !important;
+	}
+
+	/* For links in the document */
+	a {
+		/* Prevent colorization or decoration */
+		text-decoration: none;
+		color: $textcolour;
+	}
+
+	.end {
+		display: none;
+	}
+
+	h2.company {
+		background-color: inherit;
+	}
+	
+	.header.section {
+		background-color: inherit;
+	}
+	
+	.education.section {
+		background-color: inherit;
 	}
 }
 @media print and (color) {
