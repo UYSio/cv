@@ -191,7 +191,7 @@
                 "programming": ["typescript"],
                 "framework": ["express"],
                 "database": ["postgresql"],
-                "other": ["aws-lambda", "aws-sqs"]
+                "other": ["aws-lambda", "aws-sqs", "terraform"]
             },
             "current": false
         },

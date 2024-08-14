@@ -1,10 +1,10 @@
-<!DOCTYPE html><html lang="en" data-ng-app="app"><head><meta charset="UTF-8"><base href="/cv/"><title>Juan Uys &mdash; Senior developer</title><link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"><link rel="stylesheet" href="cv.7facd155.css"></head><body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
+<!DOCTYPE html><html lang="en" data-ng-app="app"><head><meta charset="UTF-8"><base href="/cv/"><title>Juan Uys &mdash; Senior developer</title><link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"><link rel="stylesheet" href="cv.34214206.css"></head><body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
     <div class="header section">
       <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
       <h1 class="name">{{$ctrl.portfolio.contact.name}}</h1>
       <h3 class="job_title">{{$ctrl.portfolio.contact.role}}</h3>
       
-      <p>
+      <p class="contact_links">
         <ul class="inline-list">
           <li ng-repeat="link in $ctrl.portfolio.contact.web" ng-show="link.show"><a ng-href="{{link.url}}">{{link.name}}</a></li>
         </ul>
@@ -59,4 +59,4 @@
       src="{{$ctrl.images.$404}}"></async-img>
 
   </script> <script type="text/ng-template" id="viz.html">
-  </script> <script src="cv.f71f79d3.js"></script> </body></html>
+  </script> <script src="cv.5a81ef56.js"></script> </body></html>

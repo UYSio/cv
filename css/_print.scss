@@ -108,6 +108,10 @@
 	.education.section {
 		background-color: inherit;
 	}
+
+	p.contact_links {
+		display: none;
+	}
 }
 @media print and (color) {
 	* {

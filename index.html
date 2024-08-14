@@ -26,7 +26,7 @@
       <h1 class="name">{{$ctrl.portfolio.contact.name}}</h1>
       <h3 class="job_title">{{$ctrl.portfolio.contact.role}}</h3>
       
-      <p>
+      <p class="contact_links">
         <ul class="inline-list">
           <li ng-repeat="link in $ctrl.portfolio.contact.web" ng-show="link.show"><a ng-href="{{link.url}}">{{link.name}}</a></li>
         </ul>
