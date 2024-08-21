@@ -242,7 +242,7 @@
             "company": "Climate Policy Radar",
             "url": "https://climatepolicyradar.org/",
             "type": "contract",
-            "tagline": "Working closely with the data science team to productionise document understanding models via a robust backend and API.",
+            "tagline": "Working closely with the data science team to productionise document understanding models via a robust backend and API, whilst plugging the short-term skills gap during a technical leadership transition.",
             "duties": [
                 "Open source climate policy database built from scratch, with FastAPI API.",
                 "Data import from disparate CSV sources using a custom ETL pipeline.",
