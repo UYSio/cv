@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-ng-app="app"><head><meta charset="UTF-8"><base href="/cv/"><title>Juan Uys &mdash; Senior developer</title><link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"><link rel="stylesheet" href="cv.34214206.css"></head><body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
+<!DOCTYPE html><html lang="en" data-ng-app="app"><head><meta charset="UTF-8"><base href="/cv/"><title>Juan Uys &mdash; Senior developer</title><link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"><link rel="stylesheet" href="cv.6947db9f.css"></head><body> <div class="page"> <ui-view></ui-view> </div>    <script type="text/ng-template" id="home.html">
     <div class="header section">
       <img class="profile" src="{{$ctrl.images.profilePicImgURL}}">
       <h1 class="name">{{$ctrl.portfolio.contact.name}}</h1>
@@ -22,7 +22,12 @@
       <h1 id="experience">Experience</h1>
 
       <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.show.experience.n">
-        <h2 class="company"><a ng-href="{{role.url}}">{{role.company}}</a></h2>
+        <h2 class="company">
+          <a ng-href="{{role.url}}">
+            <img class="logo" ng-src="{{$ctrl.images.company_logos[role.company]}}" alt="{{role.company}} logo" />
+          {{role.company}}
+          </a>
+        </h2>
         <p class="role">{{role.title}}</p>
         <p class="timeline">{{role.start}}<ng-show="!!role.end"> to {{role.end}}</ng-show><ng-show ng-show="!role.end"> now</ng-show></p>
         <p class="tagline">{{role.tagline}}</p>
@@ -59,4 +64,4 @@
       src="{{$ctrl.images.$404}}"></async-img>
 
   </script> <script type="text/ng-template" id="viz.html">
-  </script> <script src="cv.8a471903.js"></script> </body></html>
+  </script> <script src="cv.9fd777d9.js"></script> </body></html>

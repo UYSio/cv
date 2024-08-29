@@ -44,7 +44,12 @@
       <h1 id="experience">Experience</h1>
 
       <div class="role" ng-repeat="role in $ctrl.portfolio.roles |limitTo: $ctrl.show.experience.n">
-        <h2 class="company"><a ng-href="{{role.url}}">{{role.company}}</a></h2>
+        <h2 class="company">
+          <a ng-href="{{role.url}}">
+            <img class="logo" ng-src="{{$ctrl.images.company_logos[role.company]}}" alt="{{role.company}} logo" />
+          {{role.company}}
+          </a>
+        </h2>
         <p class="role">{{role.title}}</p>
         <p class="timeline">{{role.start}}<ng-show="!!role.end"> to {{role.end}}</ng-show><ng-show ng-show="!role.end"> now</ng-show></p>
         <p class="tagline">{{role.tagline}}</p>

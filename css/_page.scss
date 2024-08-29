@@ -22,34 +22,42 @@
 
 /* Defines a class for manual page breaks via inserted .page-break element */
 div.page-break {
-	page-break-after: always;
+    page-break-after: always;
 }
+
 /* For top-level headings only */
 h1:not(:first) {
-	/* Force page breaks after */
-	page-break-before: always;
+    /* Force page breaks after */
+    page-break-before: always;
 }
 
 /* For all headings */
-h1, h2, h3, h4, h5, h6 {
-	/* Avoid page breaks immediately */
-	page-break-after: avoid;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Avoid page breaks immediately */
+    page-break-after: avoid;
 }
+
 /* For all paragraph tags */
 p {
-	/* Reset the margin so that the text starts and ends at the expected marks */
-	margin: 0;
+    /* Reset the margin so that the text starts and ends at the expected marks */
+    margin: 0;
 }
+
 /* For adjacent paragraph tags */
-p + p {
-	/* Restore the spacing between the paragraphs */
-	margin-top: 0.5cm;
+p+p {
+    /* Restore the spacing between the paragraphs */
+    margin-top: 0.5cm;
 }
 
 /* For tables in the document */
 table {
-	/* Avoid page breaks inside */
-	page-break-inside: avoid;
+    /* Avoid page breaks inside */
+    page-break-inside: avoid;
 }
 
 
@@ -57,6 +65,7 @@ table {
 p.role {
     font-weight: 600;
 }
+
 p.role::before {
     content: "👷‍♂️ ";
 }
@@ -83,7 +92,7 @@ ul.inline-list {
     margin: 0;
     display: flex;
     align-items: center;
-	margin-top: -10px;
+    margin-top: -10px;
 }
 
 ul.inline-list li {
@@ -115,19 +124,20 @@ ul.inline-list li:not(.ng-hide):first-of-type::before {
 }
 
 /* un-link the header hrefs */
-h2 > a {
-	text-decoration: none;
-	color: $textcolour;
+h2>a {
+    text-decoration: none;
+    color: $textcolour;
 }
 
 h2.company {
-	background-color: lighten($accent, 25%);
+    background-color: lighten($accent, 25%);
+    padding: 7px;
 }
 
 .header.section {
-	background-color: lighten($brand, 25%);
+    background-color: lighten($brand, 25%);
 }
 
 .education.section {
-	background-color: lighten($brand, 25%);
+    background-color: lighten($brand, 25%);
 }

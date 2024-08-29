@@ -31,7 +31,7 @@
                 "url": "https://uys.io/portfolio/",
                 "show": false
             }
-        ]        
+        ]
     },
     "personal": {
         "statement": [
@@ -155,6 +155,7 @@
         {
             "title": "Founder",
             "company": "PDFCrunch",
+            "logo": "pdfcrunch.jpg",
             "url": "https://pdfcrun.ch/",
             "type": "startup",
             "tagline": "Document data extraction bespoke solutions, and consulting.",
@@ -166,16 +167,42 @@
             ],
             "start": "2016-11",
             "tech": {
-                "programming": ["python", "javascript", "clojure"],
-                "framework": ["angularjs", "flask", "keras", "scrapy", "scipy", "numpy", "django"],
-                "database": ["postgresql"],
-                "other": ["nginx", "rest-api", "gcloud", "linux", "shell-scripting", "git", "docker", "kubernetes", "html", "css"]
+                "programming": [
+                    "python",
+                    "javascript",
+                    "clojure"
+                ],
+                "framework": [
+                    "angularjs",
+                    "flask",
+                    "keras",
+                    "scrapy",
+                    "scipy",
+                    "numpy",
+                    "django"
+                ],
+                "database": [
+                    "postgresql"
+                ],
+                "other": [
+                    "nginx",
+                    "rest-api",
+                    "gcloud",
+                    "linux",
+                    "shell-scripting",
+                    "git",
+                    "docker",
+                    "kubernetes",
+                    "html",
+                    "css"
+                ]
             },
             "current": true
         },
         {
             "title": "Senior Engineer",
-            "company": "Foreign, Commonwealth and Development Office",
+            "company": "FCDO",
+            "logo": "fcdo.jpg",
             "url": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office",
             "type": "contract",
             "tagline": "Developing the next version of the travel alerts service.",
@@ -188,16 +215,27 @@
             "start": "2024-03",
             "end": "2024-08",
             "tech": {
-                "programming": ["typescript"],
-                "framework": ["express"],
-                "database": ["postgresql"],
-                "other": ["aws-lambda", "aws-sqs", "terraform"]
+                "programming": [
+                    "typescript"
+                ],
+                "framework": [
+                    "express"
+                ],
+                "database": [
+                    "postgresql"
+                ],
+                "other": [
+                    "aws-lambda",
+                    "aws-sqs",
+                    "terraform"
+                ]
             },
             "current": false
         },
         {
             "title": "Machine Learning Engineer",
             "company": "Cytora",
+            "logo": "cytora.jpg",
             "url": "https://cytora.com/",
             "type": "contract",
             "tagline": "I helped Cytora with their goal of reducing the underwriting process from 2 weeks to 20 minutes using the latest developments in document understanding and language models.",
@@ -210,16 +248,33 @@
             "start": "2023-02",
             "end": "2024-01",
             "tech": {
-                "programming": ["python", "pytorch", "machine learning", "tensorflow"],
-                "framework": ["transformer models", "LayoutXLM", "LiLT"],
+                "programming": [
+                    "python",
+                    "pytorch",
+                    "machine learning",
+                    "tensorflow"
+                ],
+                "framework": [
+                    "transformer models",
+                    "LayoutXLM",
+                    "LiLT"
+                ],
                 "database": [],
-                "other": ["GCP", "VertexAI", "document data extraction", "deep learning", "large language models (LLM)", "azure databricks"]
+                "other": [
+                    "GCP",
+                    "VertexAI",
+                    "document data extraction",
+                    "deep learning",
+                    "large language models (LLM)",
+                    "azure databricks"
+                ]
             },
             "current": false
         },
         {
             "title": "Software Engineer",
             "company": "all.health",
+            "logo": "allhealth.jpg",
             "url": "https://all.health/",
             "type": "contract",
             "tagline": "Worked closely with the data science team at this cutting-edge health startup to develop the future of real-time, personal healthcare.",
@@ -230,16 +285,33 @@
             "start": "2022-07",
             "end": "2023-01",
             "tech": {
-                "programming": ["python"],
-                "framework": ["flask"],
-                "database": ["postgresql"],
-                "other": ["rest-api", "linux", "shell-scripting", "git", "docker", "vuejs", "microsoft azure", "apache kafka", "telemetry"]
+                "programming": [
+                    "python"
+                ],
+                "framework": [
+                    "flask"
+                ],
+                "database": [
+                    "postgresql"
+                ],
+                "other": [
+                    "rest-api",
+                    "linux",
+                    "shell-scripting",
+                    "git",
+                    "docker",
+                    "vuejs",
+                    "microsoft azure",
+                    "apache kafka",
+                    "telemetry"
+                ]
             },
             "current": false
         },
         {
             "title": "Software Engineer",
             "company": "Climate Policy Radar",
+            "logo": "cpr.jpg",
             "url": "https://climatepolicyradar.org/",
             "type": "contract",
             "tagline": "Working closely with the data science team to productionise document understanding models via a robust backend and API, whilst plugging the short-term skills gap during a technical leadership transition.",
@@ -252,16 +324,31 @@
             "start": "2022-02",
             "end": "2022-05",
             "tech": {
-                "programming": ["python"],
-                "framework": ["fastapi", "react", "pulumi"],
-                "database": ["postgresql"],
-                "other": ["rest-api", "linux", "shell-scripting", "git", "docker"]
+                "programming": [
+                    "python"
+                ],
+                "framework": [
+                    "fastapi",
+                    "react",
+                    "pulumi"
+                ],
+                "database": [
+                    "postgresql"
+                ],
+                "other": [
+                    "rest-api",
+                    "linux",
+                    "shell-scripting",
+                    "git",
+                    "docker"
+                ]
             },
             "current": false
         },
         {
             "title": "Researcher & Developer",
             "company": "Offworld Live",
+            "logo": "offworld.jpg",
             "url": "https://offworld.live/",
             "type": "permanent",
             "tagline": "R&D for VR video streaming and metadata encoding using Unreal Engine + Unity.",
@@ -272,16 +359,31 @@
             "start": "2021-05",
             "end": "2022-01",
             "tech": {
-                "programming": ["typescript", "python"],
-                "framework": ["react", "pulumi"],
-                "database": ["postgresql"],
-                "other": ["rest-api", "linux", "shell-scripting", "git", "docker"]
+                "programming": [
+                    "typescript",
+                    "python"
+                ],
+                "framework": [
+                    "react",
+                    "pulumi"
+                ],
+                "database": [
+                    "postgresql"
+                ],
+                "other": [
+                    "rest-api",
+                    "linux",
+                    "shell-scripting",
+                    "git",
+                    "docker"
+                ]
             },
             "current": false
         },
         {
             "title": "Senior Developer",
             "company": "Triller",
+            "logo": "triller.jpg",
             "url": "https://triller.co/",
             "type": "contract",
             "tagline": "Built a new generation of social network alongside the moderation team to ensure safety on the platform.",
@@ -295,16 +397,30 @@
             "start": "2020-09",
             "end": "2021-04",
             "tech": {
-                "programming": ["python"],
-                "framework": ["django"],
-                "database": ["postgresql", "dynamodb"],
-                "other": ["rest-api", "linux", "shell-scripting", "git", "docker"]
+                "programming": [
+                    "python"
+                ],
+                "framework": [
+                    "django"
+                ],
+                "database": [
+                    "postgresql",
+                    "dynamodb"
+                ],
+                "other": [
+                    "rest-api",
+                    "linux",
+                    "shell-scripting",
+                    "git",
+                    "docker"
+                ]
             },
             "current": false
         },
         {
             "title": "Senior Developer",
             "company": "Sponge",
+            "logo": "sponge.jpg",
             "url": "https://wearesponge.com/",
             "type": "contract",
             "tagline": "Assisted a small team to get a range of small products over the line and into production.",
@@ -317,16 +433,35 @@
             "start": "2020-07",
             "end": "2020-09",
             "tech": {
-                "programming": ["python", "typescript", "javascript"],
-                "framework": ["django", "vue"],
-                "database": ["postgresql"],
-                "other": ["rest-api", "linux", "shell-scripting", "git", "docker", "html", "css", "sass"]
+                "programming": [
+                    "python",
+                    "typescript",
+                    "javascript"
+                ],
+                "framework": [
+                    "django",
+                    "vue"
+                ],
+                "database": [
+                    "postgresql"
+                ],
+                "other": [
+                    "rest-api",
+                    "linux",
+                    "shell-scripting",
+                    "git",
+                    "docker",
+                    "html",
+                    "css",
+                    "sass"
+                ]
             },
             "current": false
         },
         {
             "title": "Senior Python Developer",
             "company": "Bulb",
+            "logo": "bulb.jpg",
             "url": "https://web.archive.org/web/20211029235335/https://bulb.co.uk/",
             "type": "contract",
             "tagline": "Helped Bulb expand into new territories and improve their existing platform.",
@@ -342,16 +477,37 @@
             "start": "2019-10",
             "end": "2020-05",
             "tech": {
-                "programming": ["python", "jupyter"],
-                "framework": ["flask", "react"],
-                "database": ["postgresql", "bigquery"],
-                "other": ["pandas", "rest-api", "gcloud", "linux", "shell-scripting", "git", "docker", "kubernetes", "html", "css"]
+                "programming": [
+                    "python",
+                    "jupyter"
+                ],
+                "framework": [
+                    "flask",
+                    "react"
+                ],
+                "database": [
+                    "postgresql",
+                    "bigquery"
+                ],
+                "other": [
+                    "pandas",
+                    "rest-api",
+                    "gcloud",
+                    "linux",
+                    "shell-scripting",
+                    "git",
+                    "docker",
+                    "kubernetes",
+                    "html",
+                    "css"
+                ]
             },
             "current": false
         },
         {
             "title": "Development Team Lead",
             "company": "Muse App",
+            "logo": "muse.jpg",
             "url": "https://getmymuse.com/",
             "type": "contract",
             "tagline": "Development and architecture of mobile backend using Firebase.",
@@ -365,16 +521,34 @@
             "start": "2019-01",
             "end": "2019-07",
             "tech": {
-                "programming": ["python", "typescript", "javascript"],
-                "framework": ["express"],
-                "database": ["firestore", "bigquery", "postgres"],
-                "other": ["gcloud", "firebase", "cloud functions", "linux", "shell-scripting", "git"]
+                "programming": [
+                    "python",
+                    "typescript",
+                    "javascript"
+                ],
+                "framework": [
+                    "express"
+                ],
+                "database": [
+                    "firestore",
+                    "bigquery",
+                    "postgres"
+                ],
+                "other": [
+                    "gcloud",
+                    "firebase",
+                    "cloud functions",
+                    "linux",
+                    "shell-scripting",
+                    "git"
+                ]
             },
             "current": false
         },
         {
             "title": "Computer Vision Engineer",
             "company": "TAB (The App Business)",
+            "logo": "tab.jpg",
             "url": "https://www.theappbusiness.com/",
             "type": "contract",
             "tagline": "Development of backend for a receipt parsing app called HuYu for DunnHumby.",
@@ -388,16 +562,31 @@
             "start": "2018-04",
             "end": "2018-12",
             "tech": {
-                "programming": ["javascript", "python"],
+                "programming": [
+                    "javascript",
+                    "python"
+                ],
                 "framework": [],
-                "database": ["firebase real-time db", "bigquery"],
-                "other": ["gcloud", "firebase", "google vision", "cloud functions", "linux", "shell-scripting", "git"]
+                "database": [
+                    "firebase real-time db",
+                    "bigquery"
+                ],
+                "other": [
+                    "gcloud",
+                    "firebase",
+                    "google vision",
+                    "cloud functions",
+                    "linux",
+                    "shell-scripting",
+                    "git"
+                ]
             },
             "current": false
         },
         {
             "title": "Senior Software Engineer",
             "company": "Barclaycard",
+            "logo": "barclaycard.jpg",
             "url": "https://www.barclaycard.co.uk/",
             "type": "contract",
             "tagline": "Delivering Pay By Bank app.",
@@ -409,16 +598,29 @@
             "start": "2018-01",
             "end": "2018-03",
             "tech": {
-                "programming": ["java", "javascript"],
-                "framework": ["apache-cxf"],
-                "database": ["oracle"],
-                "other": ["soap-xml", "jboss", "jenkins", "svn"]
+                "programming": [
+                    "java",
+                    "javascript"
+                ],
+                "framework": [
+                    "apache-cxf"
+                ],
+                "database": [
+                    "oracle"
+                ],
+                "other": [
+                    "soap-xml",
+                    "jboss",
+                    "jenkins",
+                    "svn"
+                ]
             },
             "current": false
         },
         {
             "title": "Senior Software Engineer",
             "company": "O2 (Telefónica UK)",
+            "logo": "o2.jpg",
             "url": "https://www.telefonica.com/en/",
             "type": "contract",
             "tagline": "Delivering features on O2 Priority content management project.",
@@ -434,16 +636,37 @@
             "start": "2017-09",
             "end": "2017-12",
             "tech": {
-                "programming": ["java", "javascript", "groovy"],
-                "framework": ["dropwizard", "react", "nodejs", "selenium"],
-                "database": ["mongodb"],
-                "other": ["nginx", "kong", "jenkins", "git", "rest-api", "shell-scripting", "html", "css"]
+                "programming": [
+                    "java",
+                    "javascript",
+                    "groovy"
+                ],
+                "framework": [
+                    "dropwizard",
+                    "react",
+                    "nodejs",
+                    "selenium"
+                ],
+                "database": [
+                    "mongodb"
+                ],
+                "other": [
+                    "nginx",
+                    "kong",
+                    "jenkins",
+                    "git",
+                    "rest-api",
+                    "shell-scripting",
+                    "html",
+                    "css"
+                ]
             },
             "current": false
         },
         {
             "title": "Senior Software Engineer",
             "company": "Tesco",
+            "logo": "tesco.jpg",
             "url": "https://www.tesco.com/",
             "type": "contract",
             "tagline": "Part of team at Tesco to build the new price service using Vert.X and RxJava technology.",
@@ -457,16 +680,39 @@
             "start": "2017-02",
             "end": "2017-08",
             "tech": {
-                "programming": ["java", "groovy"],
-                "framework": ["rxjava", "vertx", "kafka"],
-                "database": ["couchbase"],
-                "other": ["shell-scripting", "apigee", "mqtt", "mosquitto", "aws", "rest-api", "git", "splunk", "appdynamics", "runscope", "jenkins", "cloudformation"]
+                "programming": [
+                    "java",
+                    "groovy"
+                ],
+                "framework": [
+                    "rxjava",
+                    "vertx",
+                    "kafka"
+                ],
+                "database": [
+                    "couchbase"
+                ],
+                "other": [
+                    "shell-scripting",
+                    "apigee",
+                    "mqtt",
+                    "mosquitto",
+                    "aws",
+                    "rest-api",
+                    "git",
+                    "splunk",
+                    "appdynamics",
+                    "runscope",
+                    "jenkins",
+                    "cloudformation"
+                ]
             },
             "current": false
         },
         {
             "title": "Data Visualisation Engineer",
             "company": "Capco",
+            "logo": "capco.jpg",
             "url": "http://capco.com/",
             "type": "contract",
             "tagline": "Part of team at CAPCO to build an information platform on the MEAN stack for global retail banks.",
@@ -478,16 +724,36 @@
             "start": "2016-05",
             "end": "2017-02",
             "tech": {
-                "programming": ["javascript", "typescript"],
-                "framework": ["nodejs", "angularjs", "express", "angular2", "d3.js"],
-                "database": ["mongodb"],
-                "other": ["circleci", "docker", "aws", "git", "rest-api", "html", "css"]
+                "programming": [
+                    "javascript",
+                    "typescript"
+                ],
+                "framework": [
+                    "nodejs",
+                    "angularjs",
+                    "express",
+                    "angular2",
+                    "d3.js"
+                ],
+                "database": [
+                    "mongodb"
+                ],
+                "other": [
+                    "circleci",
+                    "docker",
+                    "aws",
+                    "git",
+                    "rest-api",
+                    "html",
+                    "css"
+                ]
             },
             "current": false
         },
         {
             "title": "Engineering Team Lead",
             "company": "Condé Nast",
+            "logo": "condenast.jpg",
             "url": "https://www.condenast.co.uk/",
             "type": "contract",
             "tagline": "Leading the platform team to build a new fashion startup backed by Condé Nast.",
@@ -509,16 +775,46 @@
             "start": "2015-07",
             "end": "2016-03",
             "tech": {
-                "programming": ["javascript", "lua", "ruby", "php", "python"],
-                "framework": ["nodejs", "hapijs", "magento", "hybris", "react", "cucumber"],
-                "database": ["mysql"],
-                "other": ["nginx", "swagger", "kong", "kubernetes", "shell-scripting", "git", "rest-api", "docker", "aws", "mirakl", "linux", "html", "css"]
+                "programming": [
+                    "javascript",
+                    "lua",
+                    "ruby",
+                    "php",
+                    "python"
+                ],
+                "framework": [
+                    "nodejs",
+                    "hapijs",
+                    "magento",
+                    "hybris",
+                    "react",
+                    "cucumber"
+                ],
+                "database": [
+                    "mysql"
+                ],
+                "other": [
+                    "nginx",
+                    "swagger",
+                    "kong",
+                    "kubernetes",
+                    "shell-scripting",
+                    "git",
+                    "rest-api",
+                    "docker",
+                    "aws",
+                    "mirakl",
+                    "linux",
+                    "html",
+                    "css"
+                ]
             },
             "current": false
         },
         {
             "title": "Senior Software Engineer",
             "company": "Government Digital Service",
+            "logo": "gds.jpg",
             "url": "https://gds.blog.gov.uk/",
             "type": "contract",
             "tagline": "Transforming government digital services across various ministries and departments.",
@@ -533,17 +829,37 @@
             "start": "2014-03",
             "end": "2015-06",
             "tech": {
-                "programming": ["python", "scala"],
-                "framework": ["flask", "nodejs", "express", "dropwizard"],
-                "database": ["postgresql"],
-                "other": ["nginx", "linux", "shell-scripting", "docker", "aws", "heroku", "git", "rest-api"]
+                "programming": [
+                    "python",
+                    "scala"
+                ],
+                "framework": [
+                    "flask",
+                    "nodejs",
+                    "express",
+                    "dropwizard"
+                ],
+                "database": [
+                    "postgresql"
+                ],
+                "other": [
+                    "nginx",
+                    "linux",
+                    "shell-scripting",
+                    "docker",
+                    "aws",
+                    "heroku",
+                    "git",
+                    "rest-api"
+                ]
             },
             "current": false
         },
         {
             "title": "Freelance Software Engineer",
-            "company": "self employed",
-            "url": "",
+            "company": "self-employed",
+            "logo": "freelance.jpg",
+            "url": "https://uys.io",
             "type": "freelance",
             "tagline": "Various freelance while on paternity leave.",
             "duties": [
@@ -554,16 +870,32 @@
             "start": "2013-08",
             "end": "2014-03",
             "tech": {
-                "programming": ["scala", "java", "javascript"],
-                "framework": ["playframework"],
-                "database": ["mysql"],
-                "other": ["nginx", "shell-scripting", "aws", "ansible", "git", "rest-api"]
+                "programming": [
+                    "scala",
+                    "java",
+                    "javascript"
+                ],
+                "framework": [
+                    "playframework"
+                ],
+                "database": [
+                    "mysql"
+                ],
+                "other": [
+                    "nginx",
+                    "shell-scripting",
+                    "aws",
+                    "ansible",
+                    "git",
+                    "rest-api"
+                ]
             },
             "current": false
         },
         {
             "title": "Senior Software Engineer",
             "company": "NET-A-PORTER",
+            "logo": "netaporter.jpg",
             "url": "https://www.net-a-porter.com/",
             "type": "permanent",
             "tagline": "Helped grow a fashion startup into a global e-commerce giant.",
@@ -584,16 +916,43 @@
             "start": "2007-01",
             "end": "2013-08",
             "tech": {
-                "programming": ["java", "scala", "javascript"],
-                "framework": ["spring"],
-                "database": ["mysql"],
-                "other": ["elasticsearch", "apache", "linux", "shell-scripting", "soap-xml", "lucene", "solr", "jenkins", "svn", "git", "rest-api", "spring-batch", "apache-nutch", "alfresco", "activiti", "bouncycastle", "hibernate"]
+                "programming": [
+                    "java",
+                    "scala",
+                    "javascript"
+                ],
+                "framework": [
+                    "spring"
+                ],
+                "database": [
+                    "mysql"
+                ],
+                "other": [
+                    "elasticsearch",
+                    "apache",
+                    "linux",
+                    "shell-scripting",
+                    "soap-xml",
+                    "lucene",
+                    "solr",
+                    "jenkins",
+                    "svn",
+                    "git",
+                    "rest-api",
+                    "spring-batch",
+                    "apache-nutch",
+                    "alfresco",
+                    "activiti",
+                    "bouncycastle",
+                    "hibernate"
+                ]
             },
             "current": false
         },
         {
             "title": "Software Engineer",
             "company": "BeatThatQuote.com",
+            "logo": "beatthatquote.jpg",
             "url": "https://beatthatquote.com",
             "type": "permanent",
             "tagline": "Helped grow a lead-generation startup to a lucrative exit.",
@@ -605,16 +964,32 @@
             "start": "2005-12",
             "end": "2006-07",
             "tech": {
-                "programming": ["java", "ruby", "javascript"],
-                "framework": ["rails", "ajax"],
-                "database": ["mysql"],
-                "other": ["linux", "shell-scripting", "cvs", "html", "css"]
+                "programming": [
+                    "java",
+                    "ruby",
+                    "javascript"
+                ],
+                "framework": [
+                    "rails",
+                    "ajax"
+                ],
+                "database": [
+                    "mysql"
+                ],
+                "other": [
+                    "linux",
+                    "shell-scripting",
+                    "cvs",
+                    "html",
+                    "css"
+                ]
             },
             "current": false
         },
         {
             "title": "Freelance Software Engineer",
             "company": "self-employed",
+            "logo": "freelance.jpg",
             "url": "https://uys.io",
             "type": "freelance",
             "tagline": "Various freelance.",
@@ -625,16 +1000,30 @@
             "start": "2005-10",
             "end": "2005-12",
             "tech": {
-                "programming": ["php", "javascript", "perl"],
+                "programming": [
+                    "php",
+                    "javascript",
+                    "perl"
+                ],
                 "framework": [],
-                "database": ["mysql"],
-                "other": ["apache", "linux", "shell-scripting", "cvs", "html", "css"]
+                "database": [
+                    "mysql"
+                ],
+                "other": [
+                    "apache",
+                    "linux",
+                    "shell-scripting",
+                    "cvs",
+                    "html",
+                    "css"
+                ]
             },
             "current": false
         },
         {
             "title": "Support Engineer",
             "company": "ManBytesDog",
+            "logo": "no_logo.jpg",
             "url": "https://web.archive.org/web/20060827003439/http://www.manbytesdog.uk.com/",
             "type": "permanent",
             "tagline": "Part of a team that built and maintained the VITAL system for various high-profile clients.",
@@ -646,16 +1035,31 @@
             "start": "2004-05",
             "end": "2005-11",
             "tech": {
-                "programming": ["c#", "javascript"],
-                "framework": [".net"],
-                "database": ["sql-server"],
-                "other": ["iss", "linux", "shell-scripting", "visual-source-safe", "html", "css"]
+                "programming": [
+                    "c#",
+                    "javascript"
+                ],
+                "framework": [
+                    ".net"
+                ],
+                "database": [
+                    "sql-server"
+                ],
+                "other": [
+                    "iss",
+                    "linux",
+                    "shell-scripting",
+                    "visual-source-safe",
+                    "html",
+                    "css"
+                ]
             },
             "current": false
         },
         {
             "title": "Web Developer",
             "company": "Business Edge Systems",
+            "logo": "imx.jpg",
             "url": "https://imxsoftware.com",
             "type": "permanent",
             "tagline": "Backend engineering for one of Johannesburg's foremost software engineering companies.",
@@ -667,16 +1071,38 @@
             "start": "2003-10",
             "end": "2004-03",
             "tech": {
-                "programming": ["java", "coldfusion", "c#"],
-                "framework": ["j2ee", ".net"],
-                "database": ["sql-server"],
-                "other": ["iss", "linux", "shell-scripting", "dreamweaver", "visual-source-safe", "uml", "soap-xml", "rational-clearcase", "websphere", "tomcat", "jetty"]
+                "programming": [
+                    "java",
+                    "coldfusion",
+                    "c#"
+                ],
+                "framework": [
+                    "j2ee",
+                    ".net"
+                ],
+                "database": [
+                    "sql-server"
+                ],
+                "other": [
+                    "iss",
+                    "linux",
+                    "shell-scripting",
+                    "dreamweaver",
+                    "visual-source-safe",
+                    "uml",
+                    "soap-xml",
+                    "rational-clearcase",
+                    "websphere",
+                    "tomcat",
+                    "jetty"
+                ]
             },
             "current": false
         },
         {
             "title": "Web Developer",
             "company": "iGate Technologies",
+            "logo": "no_logo.jpg",
             "url": "https://web.archive.org/web/20020601093420/http://www.icatcher.co.za:80/",
             "type": "permanent",
             "tagline": "Part of a team that built the iCatcher ad-serving network, back when web ads were cute.",
@@ -693,10 +1119,37 @@
             "start": "2002-05",
             "end": "2003-09",
             "tech": {
-                "programming": ["java", "javascript", "xslt", "vbscript", "perl", "wap", "j2me"],
-                "framework": ["servlet", "jsp"],
-                "database": ["postgresql"],
-                "other": ["apache", "linux", "shell-scripting", "tomcat", "apache", "netbeans", "flash", "macromedia", "photoshop", "webmin", "sendmail", "html", "css"]
+                "programming": [
+                    "java",
+                    "javascript",
+                    "xslt",
+                    "vbscript",
+                    "perl",
+                    "wap",
+                    "j2me"
+                ],
+                "framework": [
+                    "servlet",
+                    "jsp"
+                ],
+                "database": [
+                    "postgresql"
+                ],
+                "other": [
+                    "apache",
+                    "linux",
+                    "shell-scripting",
+                    "tomcat",
+                    "apache",
+                    "netbeans",
+                    "flash",
+                    "macromedia",
+                    "photoshop",
+                    "webmin",
+                    "sendmail",
+                    "html",
+                    "css"
+                ]
             },
             "current": false
         }

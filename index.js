@@ -10,12 +10,12 @@ require('ng-async-img');
 require('angular-moment');
 
 var d3 = require('d3');
-import {schemePastel1, schemeDark2} from 'd3-scale-chromatic';
+import { schemePastel1, schemeDark2 } from 'd3-scale-chromatic';
 d3.schemePastel1 = schemePastel1;
 d3.schemeDark2 = schemeDark2;
 
 import Moment from 'moment';
-import { extendMoment } from 'moment-range'; 
+import { extendMoment } from 'moment-range';
 const moment = extendMoment(Moment);
 
 import _ from 'lodash';
@@ -36,15 +36,40 @@ app.constant('images', {
         education: require("./images/icons/glyphicons-501-education.png"),
         certifications: require("./images/icons/glyphicons-333-certificate.png"),
         interests: require("./images/icons/glyphicons-20-heart-empty.png")
+    },
+    company_logos: {
+        "PDFCrunch": require("./images/company_logos/pdfcrunch.jpg"),
+        "FCDO": require("./images/company_logos/fcdo.jpg"),
+        "Cytora": require("./images/company_logos/cytora.jpg"),
+        "all.health": require("./images/company_logos/allhealth.jpg"),
+        "Climate Policy Radar": require("./images/company_logos/cpr.jpg"),
+        "Offworld Live": require("./images/company_logos/offworld.jpg"),
+        "Triller": require("./images/company_logos/triller.jpg"),
+        "Sponge": require("./images/company_logos/sponge.jpg"),
+        "Bulb": require("./images/company_logos/bulb.jpg"),
+        "Muse App": require("./images/company_logos/muse.jpg"),
+        "TAB (The App Business)": require("./images/company_logos/tab.jpg"),
+        "Barclaycard": require("./images/company_logos/barclaycard.jpg"),
+        "O2 (Telefónica UK)": require("./images/company_logos/o2.jpg"),
+        "Tesco": require("./images/company_logos/tesco.jpg"),
+        "Capco": require("./images/company_logos/capco.jpg"),
+        "Condé Nast": require("./images/company_logos/condenast.jpg"),
+        "Government Digital Service": require("./images/company_logos/gds.jpg"),
+        "self-employed": require("./images/company_logos/freelance.jpg"),
+        "NET-A-PORTER": require("./images/company_logos/netaporter.jpg"),
+        "BeatThatQuote.com": require("./images/company_logos/beatthatquote.jpg"),
+        "ManBytesDog": require("./images/company_logos/no_logo.jpg"),
+        "Business Edge Systems": require("./images/company_logos/imx.jpg"),
+        "iGate Technologies": require("./images/company_logos/no_logo.jpg"),
     }
 });
 
-app.filter('abs', function() {
-    return function(num) { return Math.abs(num); }
+app.filter('abs', function () {
+    return function (num) { return Math.abs(num); }
 });
 
-app.filter('list', function() {
-    return function(val) {
+app.filter('list', function () {
+    return function (val) {
         return val.slice(0, val.length - 1).join(', ') + ' and ' + val[val.length - 1];
     }
 });

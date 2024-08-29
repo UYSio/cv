@@ -6,7 +6,6 @@
   "scripts": {
     "start": "parcel index.html",
     "dist": "parcel build index.html -d docs --public-url ./",
-    "build": "parcel build index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

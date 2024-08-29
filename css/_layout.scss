@@ -4,6 +4,7 @@
     padding-left: $spacing;
     padding-right: $spacing;
 }
+
 .section h3 {
     padding-bottom: 15px;
 }
@@ -12,17 +13,27 @@
     padding-top: $spacing;
 }
 
-h4 > small {
+h4>small {
     color: $textcolourll;
     font-style: italic;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-h4 > small:nth-child(2) {
+h4>small:nth-child(2) {
     float: right;
 }
 
 .role {
     padding-top: 10px;
+}
+
+
+.company .logo {
+    max-height: 1.5em;
+    /* Adjust as needed to match your desired height */
+    vertical-align: middle;
+    /* Align the image to the middle of the text */
+    margin-right: 0.5em;
+    /* Add some space between the image and text */
 }
