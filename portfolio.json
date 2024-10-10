@@ -1,7 +1,7 @@
 {
     "contact": {
         "name": "Juan Uys",
-        "role": "Senior developer",
+        "role": "Software engineer",
         "phone": "07702 783 956",
         "email": "juan+cv@uys.io",
         "address": "Cheltenham, UK",
@@ -53,6 +53,22 @@
     },
     "education": [
         {
+            "institution": "Databricks",
+            "course": "Academy Accreditation - Databricks Fundamentals",
+            "level": "accreditation",
+            "url": "https://credentials.databricks.com/6c0e3255-0d9a-44c1-9e34-228d81e74556",
+            "year": 2024,
+            "month": 10
+        },
+        {
+            "institution": "DeepLearning.AI",
+            "course": "Building and Evaluating Advanced RAG",
+            "level": "certification",
+            "url": "https://learn.deeplearning.ai/accomplishments/f5f70e4d-7b7f-4eae-ae04-1df5bb369359",
+            "year": 2024,
+            "month": 9
+        },
+        {
             "institution": "NVIDIA",
             "course": "Data Parallelism: How to Train Deep Learning Models on Multiple GPUs",
             "level": "certification",
@@ -85,7 +101,7 @@
         },
         {
             "institution": "Coursera",
-            "course": "deeplearning.ai",
+            "course": "Deep Learning Specialisation",
             "level": "specialisation",
             "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/WUMC3L2MXQ7F",
             "year": 2018,
@@ -195,6 +211,33 @@
                     "kubernetes",
                     "html",
                     "css"
+                ]
+            },
+            "current": true
+        },
+        {
+            "title": "Lead Engineer",
+            "company": "GoodWith",
+            "logo": "goodwith.jpg",
+            "url": "https://goodwith.co",
+            "type": "contract",
+            "tagline": "Developing next version of financial learning platform.",
+            "duties": [],
+            "start": "2024-09",
+            "tech": {
+                "programming": [
+                    "dart",
+                    "typescript"
+                ],
+                "framework": [
+                    "flutter",
+                    "firebase"
+                ],
+                "database": [
+                    "firestore"
+                ],
+                "other": [
+                    "gcp-cloud-functions"
                 ]
             },
             "current": true

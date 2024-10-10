@@ -38,7 +38,8 @@ app.constant('images', {
         interests: require("./images/icons/glyphicons-20-heart-empty.png")
     },
     company_logos: {
-        "PDFCrunch": require("./images/company_logos/pdfcrunch.jpg"),
+        "PDFCrunch": require("./images/company_logos/pdfcrunch.png"),
+        "GoodWith": require("./images/company_logos/goodwith.png"),
         "FCDO": require("./images/company_logos/fcdo.jpg"),
         "Cytora": require("./images/company_logos/cytora.jpg"),
         "all.health": require("./images/company_logos/allhealth.jpg"),
